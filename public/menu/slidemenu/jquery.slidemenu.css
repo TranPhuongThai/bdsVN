@@ -1,0 +1,93 @@
+.jqueryslidemenu {
+position: relative;
+z-index: 9999;
+height:44px;
+line-height:44px;
+}
+
+.jqueryslidemenu ul li a {
+padding:0 18px;
+text-align:center;
+line-height:44px;
+font-weight:bold;
+font-size:13px;
+text-transform:uppercase;
+text-decoration:none;
+display:block;
+color:#fff;
+}
+
+.jqueryslidemenu ul li a h1{
+display: inline;
+color:#fff;
+}
+
+.jqueryslidemenu ul {
+margin:0;
+padding:0;
+list-style-type:none
+}
+
+.jqueryslidemenu ul li {
+position:relative;
+display:inline;
+float:left
+}
+
+* html .jqueryslidemenu ul li a {
+display:inline-block;
+}
+
+.jqueryslidemenu ul li a:link,.jqueryslidemenu ul li a:visited {
+color:#fff;
+}
+
+.jqueryslidemenu ul li.active a,.jqueryslidemenu ul li a:hover {
+color:#fff
+}
+
+.jqueryslidemenu ul li ul {
+position:absolute;
+left:0;
+display:block;
+visibility:hidden;
+background: #4781c2;
+}
+
+.jqueryslidemenu ul li ul li {
+display:list-item;
+float:none
+}
+
+.jqueryslidemenu ul li ul li ul {
+top:0
+}
+
+.jqueryslidemenu ul li ul li a {
+width:160px;
+padding:5px;
+margin:0;
+border-left: 0!important;
+border-right: 0!important;
+border-bottom: 1px solid #d1d1d1!important;
+}
+
+.jqueryslidemenu ul li ul li a:hover {
+text-decoration:underline; 
+}
+
+.downarrowclass {
+display:none;
+position:absolute;
+top:12px;
+right:7px
+}
+
+.rightarrowclass {
+display:none;
+position:absolute;
+top:6px;
+right:5px
+}
+
+

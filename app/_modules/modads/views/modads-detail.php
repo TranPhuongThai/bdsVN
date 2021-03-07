@@ -1,0 +1,1 @@
+<a href="<?php echo $ads_list['Link'];?>" target="_blank" rel="nofollow" title="<?php echo $ads_list['Name'];?>"><?php echo _showAds($ads_list['Img'],$ads_list['Link'],$ads_list['Name']);?></a>

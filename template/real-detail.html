@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="public/image/tiendv/favicon.png">
+    
+    <title>Tiêu đề website</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="public/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="public/css/bootstrap-theme.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="public/css/theme.css" rel="stylesheet">
+    
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="public/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="public/js/ie-emulation-modes-warning.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="public/js/jquery.1.11.3.min.js"></script>
+</head>
+
+<body role="document">
+    <script type="text/javascript">
+      window.___gcfg = {lang: 'vi'};
+    
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- Fixed navbar -->
+    <nav id="top">
+        <div class="navbar navbar-inverse __navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <!--<a class="navbar-brand" href="#">Tiêu đề website</a>-->
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" title="Tiêu đề website"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Trang chủ</a></li>
+                        <li><a href="#" title="Tiêu đề website"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Giới thiệu</a></li>
+                        <li><a href="#" title="Tiêu đề website"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Liên hệ</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" data-toggle="modal" data-target="#modalRegis"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Đăng ký</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#modalLogin"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="container">
+                <a class="logo" href="#" title="Tiêu đề website"><img src="./public/image/tiendv/datvang.png" title="Tiêu đề website" alt="Tiêu đề website"/></a>
+                <a class="bner" href="#" title=""><img src="./public/image/tiendv/banner.jpg" title="" alt=""/></a>
+            </div>
+        </div>
+        <div class="main-menu">
+            <div class="container">
+                <span class="button-main-menu-mobile">Danh mục website</span>
+                <ul class="nav-main-menu">
+                    <li class="active"><a href="#" title="">Menu 1</a></li>
+                    <li>
+                        <a href="javascript:void(0);" title="">Menu 2</a>
+                        <ul>
+                            <li><a href="#" title="">Menu con 1</a></li>
+                            <li><a href="#" title="">Menu con 2</a></li>
+                            <li><a href="#" title="">Menu con 3</a></li>
+                            <li><a href="#" title="">Menu con 4</a></li>
+                            <li><a href="#" title="">Menu con 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="">Menu 3</a></li>
+                    <li>
+                        <a href="javascript:void(0);" title="">Menu 4</a>
+                        <ul>
+                            <li><a href="#" title="">Menu con 1</a></li>
+                            <li><a href="#" title="">Menu con 2</a></li>
+                            <li><a href="#" title="">Menu con 3</a></li>
+                            <li><a href="#" title="">Menu con 4</a></li>
+                            <li><a href="#" title="">Menu con 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="">Menu 5</a></li>
+                    <li><a href="#" title="">Menu 6</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="wrapper">
+        <div class="container">
+            <div class="col-md-8 margin-top">
+                <div class="row-left m-row-left">
+                    <div class="real-detail">
+                        <h1 class="real-detail-title">Quisque velit nisi, pretium ut lacinia in, elementum id enim.</h1>
+                        <div class="real-detail-position"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Khu vực: 264E Lê Thị Riêng, Q. Tân Bình, TP. Hồ Chí Minh</div>
+                        <div class="real-detail-cost">
+                            Giá: <span>700.000.000 VND</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            Diện tích <span>220 m<sup>2</sup></span>
+                        </div>
+                        <div class="real-detail-maincontent">
+                            <div class="real-detail-maincontent-title">Thông tin mô tả</div>
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla quis lorem ut libero malesuada feugiat. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+                        </div>
+                        <div class="real-detail-img">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#tabSlide" aria-controls="tabSlide" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-picture"></span>&nbsp;&nbsp;Hình ảnh</a></li>
+                                <li role="presentation"><a href="#tabMap" aria-controls="tabMap" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;Bản đồ</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="tabSlide">
+                                    <div id="slider" class="flexslider">
+                                        <ul class="slides">
+                                            <li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                                        	</li>
+                                        	<li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_lemon.jpg" />
+                                        	</li>
+                                        	<li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_donut.jpg" />
+                                        	</li>
+                                        	<li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_caramel.jpg" />
+                                        	</li>
+                                        	<li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_caramel.jpg" />
+                                        	</li>
+                                        	<li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_caramel.jpg" />
+                                        	</li>
+                                        </ul>
+                                    </div>
+                                    <div id="carousel" class="flexslider">
+                                        <ul class="slides">
+                                            <li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                                        	</li>
+                                        	<li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_lemon.jpg" />
+                                        	</li>
+                                        	<li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_donut.jpg" />
+                                        	</li>
+                                        	<li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_caramel.jpg" />
+                                        	</li>
+                                        	<li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_caramel.jpg" />
+                                        	</li>
+                                        	<li>
+                                                <img src="./public/plugin/flexslider/images/kitchen_adventurer_caramel.jpg" />
+                                        	</li>
+                                        </ul>
+                                    </div>
+                                    <link rel="stylesheet" href="./public/plugin/flexslider/flexslider.css" type="text/css" media="screen" />
+                                    <script src="./public/plugin/flexslider/jquery.flexslider-min.js"></script>
+                                    <script src="./public/plugin/flexslider/jquery.easing.js"></script>
+                                    <script src="./public/plugin/flexslider/jquery.mousewheel.js"></script>
+    
+                                    <script type="text/javascript">
+                                        $(window).load(function(){
+                                            $('#carousel').flexslider({
+                                            animation: "slide",
+                                            controlNav: false,
+                                            animationLoop: false,
+                                            slideshow: false,
+                                            itemWidth: 152,
+                                            itemMargin: 5,
+                                            asNavFor: '#slider'
+                                            });
+                                            
+                                            $('#slider').flexslider({
+                                                animation: "slide",
+                                                controlNav: false,
+                                                animationLoop: false,
+                                                slideshow: false,
+                                                sync: "#carousel",
+                                                start: function(slider){
+                                                    $('body').removeClass('loading');
+                                                }
+                                            });
+                                        });
+                                    </script>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tabMap">
+                                    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyAhdUArEcXDm-O8cc_4l6nulWOLX4vcNEw"></script>
+                                    <div align="center" id="map"></div>
+                                    <script>
+                                        function loadMap() {
+                                        	if (GBrowserIsCompatible()) {
+                                        		var map = new GMap2(document.getElementById("map"));
+                                        		map.addControl(new GSmallMapControl());
+                                        		map.addControl(new GMapTypeControl());
+                                        		var center = new GLatLng(10.91560, 106.76920);
+                                        		map.setCenter(center, 15);
+                                        		geocoder = new GClientGeocoder();
+                                        		var marker = new GMarker(center, {
+                                        			draggable: true
+                                        		});
+                                        		map.addOverlay(marker);
+                                        	}
+                                        }
+                                        
+                                        if(window.attachEvent) {
+                                            window.attachEvent('onload', loadMap);
+                                        } else {
+                                            if(window.onload) {
+                                                var curronload = window.onload;
+                                                var newonload = function() {
+                                                    curronload();
+                                                    loadMap();
+                                                };
+                                                window.onload = newonload;
+                                            } else {
+                                                window.onload = loadMap;
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="real-detail-info margin-top">
+                            <div class="col-xs-6">
+                                <div class="real-detail-maincontent-title">Đặc điểm</div>
+                                <table class="table">
+                                    <tbody>
+                                        <tr class="success">
+                                            <td>Danh mục</td>
+                                            <td>Nhà phố, liên kế</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>Hướng nhà</td>
+                                            <td>Đông Bắc</td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td>Số phòng khách</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>Số phòng ngủ</td>
+                                            <td>6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="real-detail-maincontent-title">Thông tin liên hệ</div>
+                                <table class="table">
+                                    <tbody>
+                                        <tr class="success">
+                                            <td>Tên liên lạc</td>
+                                            <td>Đỗ Văn Tiến</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>Điện thoại</td>
+                                            <td>0974 646 161</td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td>Email</td>
+                                            <td>dovantien2911@gmail.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                    <div class="header-title title-news margin-top">
+                        Tin rao cùng khu vực
+                    </div>
+                    <ul class="news-list-3">
+                        <li>
+                            <div class="col-sm-3">
+                                <div class="row-left m-row-left">
+                                    <a class="img" href="" title=""><img src="./public/assets/tin_rao/2015-09/news-1.jpg" title="" alt=""/></a>    
+                                </div>    
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <a class="tit" href="" title="">Lorem ipsum dolor sit amet, elit sed, nisl orci</a>
+                                    <label><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;Giá</label><span class="color-green font-bold">: 6.5 Tỷ</span><br />
+                                    <label><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Diện tích</label>: 100 m<br />
+                                    <label><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Vị trí</label>: Dĩ An, Bình Dương
+                                    <span class="news-date">2015-10-20</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="col-sm-3">
+                                <div class="row-left m-row-left">
+                                    <a class="img" href="" title=""><img src="./public/assets/tin_rao/2015-09/news-1.jpg" title="" alt=""/></a>    
+                                </div>    
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <a class="tit" href="" title="">Lorem ipsum dolor sit amet, elit sed, nisl orci</a>
+                                    <label><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;Giá</label><span class="color-green font-bold">: 6.5 Tỷ</span><br />
+                                    <label><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Diện tích</label>: 100 m<br />
+                                    <label><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Vị trí</label>: Dĩ An, Bình Dương
+                                    <span class="news-date">2015-10-20</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="col-sm-3">
+                                <div class="row-left m-row-left">
+                                    <a class="img" href="" title=""><img src="./public/assets/tin_rao/2015-09/news-1.jpg" title="" alt=""/></a>    
+                                </div>    
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <a class="tit" href="" title="">Lorem ipsum dolor sit amet, elit sed, nisl orci</a>
+                                    <label><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;Giá</label><span class="color-green font-bold">: 6.5 Tỷ</span><br />
+                                    <label><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Diện tích</label>: 100 m<br />
+                                    <label><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Vị trí</label>: Dĩ An, Bình Dương
+                                    <span class="news-date">2015-10-20</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="col-sm-3">
+                                <div class="row-left m-row-left">
+                                    <a class="img" href="" title=""><img src="./public/assets/tin_rao/2015-09/news-1.jpg" title="" alt=""/></a>    
+                                </div>    
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <a class="tit" href="" title="">Lorem ipsum dolor sit amet, elit sed, nisl orci</a>
+                                    <label><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;Giá</label><span class="color-green font-bold">: 6.5 Tỷ</span><br />
+                                    <label><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Diện tích</label>: 100 m<br />
+                                    <label><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Vị trí</label>: Dĩ An, Bình Dương
+                                    <span class="news-date">2015-10-20</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="col-sm-3">
+                                <div class="row-left m-row-left">
+                                    <a class="img" href="" title=""><img src="./public/assets/tin_rao/2015-09/news-1.jpg" title="" alt=""/></a>    
+                                </div>    
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <a class="tit" href="" title="">Lorem ipsum dolor sit amet, elit sed, nisl orci</a>
+                                    <label><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;Giá</label><span class="color-green font-bold">: 6.5 Tỷ</span><br />
+                                    <label><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Diện tích</label>: 100 m<br />
+                                    <label><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Vị trí</label>: Dĩ An, Bình Dương
+                                    <span class="news-date">2015-10-20</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-4 margin-top">
+                <div class="row m-row">
+                    <div id="main-search" class="main-search-2">
+                        <ul>
+                            <li class="active" data-type="0">Nhà bán</li>
+                            <li data-type="2">Đất bán</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <form>
+                            <div class="col-sm-12 form-item">
+                                <input type="text" placeholder="Nhập địa điểm"/>
+                            </div>
+                            <div class="col-md-12 form-item">
+                                <select>
+                                    <option>Danh mục BĐS</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-item">
+                                <select>
+                                    <option>Tỉnh thành</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-item">
+                                <select>
+                                    <option>Quận/huyện</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-item">
+                                <select>
+                                    <option>Phường/Xã</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-item">
+                                <select>
+                                    <option>Diện tích</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-item">
+                                <select>
+                                    <option>Mức giá</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-item">
+                                <select>
+                                    <option>Hướng nhà</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-item">
+                                <select data-type="2">
+                                    <option>Số phòng ngủ</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-item">
+                                <select data-type="2">
+                                    <option>Số phòng khách</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-item">
+                                <input type="submit" value="Tìm Kiếm"/>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row m-row margin-top">
+                    <div class="header-title title-star">Tin xem nhiều</div>
+                    <div class="clearfix"></div>
+                    <ul class="news-list news-list-1">
+                        <li>
+                            <a href="#" title="">Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</a>
+                        </li>
+                        <li>
+                            <a href="#" title="">Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</a>
+                        </li>
+                        <li>
+                            <a href="#" title="">Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</a>
+                        </li>
+                        <li>
+                            <a href="#" title="">Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row m-row margin-top">
+                    <span class="header-title title-menu"><a href="#">Danh mục nhà đất</a></span>
+                    <div class="clearfix"></div>
+                	<ul class="menu-real-estate">
+                        <li>
+                            <h2><a href="" title="Nhà Lầu">Nhà Lầu</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Nhà Phố, Liên Kế">Nhà Phố, Liên Kế</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Nhà Cấp 4">Nhà Cấp 4</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Nhà Trọ">Nhà Trọ</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Chung Cư, Căn Hộ">Chung Cư, Căn Hộ</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Biệt Thự">Biệt Thự</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Nhà Nghỉ, Khách Sạn">Nhà Nghỉ, Khách Sạn</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Cửa hàng, Văn Phòng">Cửa hàng, Văn Phòng</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Mặt Bằng Xây Dựng">Mặt Bằng Xây Dựng</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Nhà Kho, Nhà Xưởng">Nhà Kho, Nhà Xưởng</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Đất Nền, Đất Ở">Đất Nền, Đất Ở</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Đất Dự Án">Đất Dự Án</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Đất Nông Nghiệp">Đất Nông Nghiệp</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="" title="Đất Trang Trại">Đất Trang Trại</a></h2>
+                        </li>
+                	</ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="row m-row">
+                    <span class="header-title title-support margin-top"><a href="#">Hỗ trợ trực tuyến</a></span>
+                    <div class="clearfix"></div>
+                    <ul class="support margin-top">
+                        <li>
+                            <div class="name">Đỗ Văn Tiến</div>
+                            <div class="email"><a rel="nofollow" href="mailto:dovantien2911@gmail.com">dovantien2911@gmail.com</a></div>
+                            <div class="yahoo">
+                                <a rel="nofollow" href="ymsgr:sendim?dovantien2911">
+            						<img align="absmiddle" border="0" src="http://opi.yahoo.com/online?u=dovantien2911&amp;m=g&amp;t=1&amp;l=us">
+            					</a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="phone">0913 729 900</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="name">Đỗ Văn Tiến</div>
+                            <div class="email"><a rel="nofollow" href="mailto:dovantien2911@gmail.com">dovantien2911@gmail.com</a></div>
+                            <div class="yahoo">
+                                <a rel="nofollow" href="ymsgr:sendim?dovantien2911">
+            						<img align="absmiddle" border="0" src="http://opi.yahoo.com/online?u=dovantien2911&amp;m=g&amp;t=1&amp;l=us">
+            					</a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="phone">0913 729 900</div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="row m-row margin-top">
+                    <div class="qcao-right">
+                        <a href="#" title="" target="_blank"><img width="100%" src="./public/assets/banner/bnr-1.jpg" title="" alt=""/></a>
+                    </div>                  
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+        <div class="main-menu margin-top">
+            <div class="container">
+                <ul class="nav-main-menu">
+                    <li class="active"><a href="#" title="">Menu 1</a></li>
+                    <li><a href="#" title="">Menu 2</a></li>
+                    <li><a href="#" title="">Menu 3</a></li>
+                    <li><a href="#" title="">Menu 4</a></li>
+                    <li><a href="#" title="">Menu 5</a></li>
+                    <li><a href="#" title="">Menu 6</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="col-sm-3 margin-top">
+                <a class="logo" href="#" title="Tiêu đề website"><img width="100%" src="./public/image/tiendv/datvang.png" title="Tiêu đề website" alt="Tiêu đề website"/></a>
+            </div>
+            <div class="col-sm-9 margin-top">
+                <div class="text-left">
+                    <div class="info_footer">
+                        <p>Giấy phép hoạt động trang tin điện tử ICP số 23/GP-TTĐT.</p>
+                        <p>Copyright © 2010 - 2015 Dothi.net. ® Ghi rõ nguồn "Dothi.net" khi phát hành lại thông tin từ website này.</p>
+                        <p class="info_ct">
+                            <span>Hot line:  0903 236 862 - 0969 980 365 - 093 205 141</span>
+                        </p>
+                        <p class="info_ct">
+                             <a style="border:none;margin:0;padding:0" rel="nofollow" href="mailto:cskh@info@dothi.net?Subject=Liên hệ-info@dothi.net" target="_top">Email: info@dothi.net</a>
+                            <a href="skype:cskh.dothinet?chat" rel="nofollow">Skype: cskh.dothinet</a>
+                            <a href="ymsgr:sendim?cskh.dothinet" rel="nofollow">Yahoo: cskh.dothinet</a>
+                        </p>
+                        <p class="info_ct">
+                            <span>Địa chỉ: Số 80B - Nguyễn Văn Cừ - Long Biên - HN.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="margin-top hr-info"></div>
+            <div class="web-info text-left">
+                Thiết kế website: <a href="#">Webbox</a>
+                <div class="g-plus"><div class="g-plusone" data-href="http://datvangbinhduong.com.vn/" data-size="medium"></div></div>
+                <div class="fb-like" data-href="http://datvangbinhduong.com.vn/" data-share="false" data-send="true" data-layout="button_count" data-width="120" data-show-faces="true"></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="modalRegis" tabindex="-1" role="dialog" aria-labelledby="modalRegisLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modalRegisLabel">Đăng ký tài khoản</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    	<div class="form-group">
+                    		<label for="inputName">
+                    			Họ tên
+                    		</label>
+                    		<input type="name" class="form-control" id="inputName" placeholder="Name">
+                    	</div>
+                    	<div class="form-group">
+                    		<label for="inputEmail">
+                    			Email address
+                    		</label>
+                    		<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    	</div>
+                    	<div class="form-group">
+                    		<label for="inputPassword">
+                    			Password
+                    		</label>
+                    		<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    	</div>
+                    	<div class="form-group">
+                    		<label for="inputPhone">
+                    			Phone number
+                    		</label>
+                    		<input type="phone" class="form-control" id="inputPhone" placeholder="Phone">
+                    	</div>
+                    	<div class="form-group more">
+                    		<label>
+                                <span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#modalLogin" class="close" data-dismiss="modal" aria-label="Close">Đã có tài khoản</a>
+                            </label>
+                    	</div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modalLoginLabel">Đăng nhập</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    	<div class="form-group">
+                    		<label for="inputName">
+                    			Username
+                    		</label>
+                    		<input type="name" class="form-control" id="inputName" placeholder="Name">
+                    	</div>
+                    	<div class="form-group">
+                    		<label for="inputPassword">
+                    			Password
+                    		</label>
+                    		<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    	</div>
+                    	<div class="form-group more">
+                    		<label>
+                                <span class="glyphicon glyphicon-question-sign"></span>&nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#modalForget" class="close" data-dismiss="modal" aria-label="Close">Quên mật khẩu?</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+                                <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#modalRegis" class="close" data-dismiss="modal" aria-label="Close">Đăng ký tài khoản</a>
+                            </label>
+                    	</div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalForget" tabindex="-1" role="dialog" aria-labelledby="modalForgetLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modalForgetLabel">Quên mật khẩu</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    	<div class="form-group">
+                    		<label for="inputEmail">
+                    			Email
+                    		</label>
+                    		<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    	</div>
+                    	<div class="form-group more">
+                    		<label>
+                                <a href="#" data-toggle="modal" data-target="#modalLogin" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Đăng nhập</a>
+                    		</label>
+                    	</div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+    
+    <div id="siteLeft" style="display: none">
+        <div class="bnScroll" id="bnLeft" style="width: 100px">
+            <div class="item">
+                <a id="ban_l1" href="http://file.dothi.net/KM/tung-bung-khuyen-mai-uu-dai-dac-biet-tu-dothi-net.html" rel="nofollow" target="_blank" style="width: 100px;">
+                    <img src="http://dothi.net/Images/banner/banner-ThuHT-151022-100x300.gif" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="siteRight" style="display: none">
+        <div class="bnScroll" id="bnRight" style="width: 100px">
+            <div class="item">
+                <a id="ban_r1" href="http://file.dothi.net/KM/tung-bung-khuyen-mai-uu-dai-dac-biet-tu-dothi-net.html" rel="nofollow" target="_blank" style="width: 100px;">
+                    <img src="http://dothi.net/Images/banner/banner-ThuHT-151022-100x300.gif" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/docs.min.js"></script>
+    <script src="public/js/script.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="public/js/ie10-viewport-bug-workaround.js"></script>
+    
+</body>
+</html>

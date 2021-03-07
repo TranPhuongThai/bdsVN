@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond $1 !^(index\.php|bao-tri|public|assets|robots\.txt|.*\.css|ror.xml|sitemap.html|sitemap.xml|urllist.txt|curentdirectory.php|template)
+RewriteRule ^(.*)$ index.php/$1 [L]
