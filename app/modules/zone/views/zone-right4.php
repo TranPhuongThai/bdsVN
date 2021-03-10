@@ -1,21 +1,23 @@
 
-                <div class="row m-row">
-                    <?php echo $modreal->form('', 0,0,0,0,0,0,0,0,'right');?>
+               
+                <div class="row m-row margin-top">
+                    <div class="header-title">Xem nhiều</div>
+                    <div class="clearfix"></div>
+                    <?php echo $modnews->newsTopHit(2, 0);?>
                     <div class="clearfix"></div>
                 </div>
                 <div class="row m-row margin-top">
-                    <div class="header-title title-star">Tin nổi bật</div>
-                    <div class="clearfix"></div>
-                    <?php echo $modnews->newsHot(6, 0);?>
-                    <div class="clearfix"></div>
+                    <div class="qcao-right">
+                        <?php echo $modads->detail(5);?>
+                    </div>                  
                 </div>
                 <div class="row m-row margin-top">
-                    <div class="header-title title-star">Tin xem nhiều</div>
+                    <div class="header-title">Tư vấn</div>
                     <div class="clearfix"></div>
-                    <?php echo $modnews->newsTopHit(6, 0);?>
+                    <?php echo $modnews->newsAdvisory(3, 0);?>
                     <div class="clearfix"></div>
                 </div>
-                <div class="row m-row margin-top">
+                <!-- <div class="row m-row margin-top">
                     <span class="header-title title-menu">Danh mục nhà đất</span>
                     <div class="clearfix"></div>
                     <?php echo $modreal->listMenu();?>
@@ -26,13 +28,13 @@
                     <div class="clearfix"></div>
                     <?php echo $modreal->listDistrict();?>
                     <div class="clearfix"></div>
-                </div>
-                <div class="row m-row margin-top">
+                </div> -->
+                <!-- <div class="row m-row margin-top">
                     <span class="header-title title-support">Hỗ trợ trực tuyến</span>
                     <div class="clearfix"></div>
                     <?php echo $modsupport->index();?>
                     <div class="clearfix"></div>
-                </div>
+                </div> -->
                 <div class="row m-row margin-top">
                     <div class="qcao-right">
                         <?php echo $modads->detail(5);?>

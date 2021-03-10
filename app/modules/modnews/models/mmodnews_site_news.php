@@ -90,6 +90,19 @@ class Mmodnews_site_news extends CI_Model{
         return $data;
     }
 
+    function getAdvisoryData($order, $record_number, $record_start){
+        $this->db->select('n.*, m.ID as MID, m.Name as MName');
+        $this->db->from($this->_table." n");
+        $this->db->join('site_news_menu m', 'n.Menu = m.ID');
+        $this->db->where("n.Advisory", 1);
+        $this->db->where("n.Status", 1);
+        $this->db->limit($record_number, $record_start);
+        $this->db->order_by("ID",$order);
+        $query = $this->db->get();
+        $data = $query->result_array();
+        return $data;
+    }
+
     function getTopHitData($order, $record_number, $record_start){
         $this->db->select('n.*, m.ID as MID, m.Name as MName');
         $this->db->from($this->_table." n");

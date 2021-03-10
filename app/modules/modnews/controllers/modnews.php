@@ -116,6 +116,20 @@ class Modnews extends MX_Controller{
 
     }
 
+    public function newsAdvisory($record_number = 4, $record_start = 0){
+
+        $this->load->model(array("modnews/mmodnews_site_news"));
+
+        $data['news_list'] = $this->mmodnews_site_news->getAdvisoryData("DESC", $record_number, $record_start);
+
+        if($data['news_list']){
+
+            $this->load->view("modnews/modnews-newsHot", $data);
+
+        }
+
+    }
+
     public function newsHotMenu($menu = 1, $record_number = 4, $record_start = 0){
 
         $this->load->model(array("modnews/mmodnews_site_news"));

@@ -361,7 +361,7 @@ display: block;
 height: 56px;
 color: #a5a5a5;
 border-top: 1px solid #eaeaea;
-background: url(../image/tiendv/arrow-4.png) 0px 15px no-repeat;
+/* background: url(../image/tiendv/arrow-4.png) 0px 15px no-repeat; */
 }
 .news-list.news-list-1 li{
 height: 62px;
@@ -587,7 +587,7 @@ padding: 8px 0 8px 15px;
 display: block;
 height: 56px;
 color: #424242;
-background: url(../image/tiendv/arrow-4.png) 0px 15px no-repeat;
+/* background: url(../image/tiendv/arrow-4.png) 0px 15px no-repeat; */
 }
 ul.news-list-4-2 li a{
 display: block;
@@ -611,7 +611,7 @@ margin: 5px;
 }
 .news-list-5-content ul.news-list-5-2 li{
 padding: 5px 0 5px 20px;
-background: url(../image/tiendv/arrow-4.png) 5px 11px no-repeat;
+/* background: url(../image/tiendv/arrow-4.png) 5px 11px no-repeat; */
 }
 .news-list-5-content ul.news-list-5-2 li a{
 display: inline-block;

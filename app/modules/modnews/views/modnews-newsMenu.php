@@ -11,7 +11,7 @@ if(!isset($news_list)){
     }
 }else{
 ?>
-<span class="header-title title-<?php echo ($menu_check['Cls']) ? $menu_check['Cls'] : 'pt';?> margin-top"><a href="<?php echo base_url(_setURL($menu_check['Name']).'-mnews-'.$menu_check['ID']);?>.html"><?php echo $menu_check['Name'];?></a></span>
+<span class="header-title header-news-title title-<?php echo ($menu_check['Cls']) ? $menu_check['Cls'] : 'pt';?> margin-top"><a href="<?php echo base_url(_setURL($menu_check['Name']).'-mnews-'.$menu_check['ID']);?>.html"><?php echo $menu_check['Name'];?></a></span>
 <div class="news-list-5">
     <ul class="col-sm-12">
         <?php foreach($news_list as $row){ ?>
