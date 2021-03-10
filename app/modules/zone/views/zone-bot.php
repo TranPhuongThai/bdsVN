@@ -48,7 +48,7 @@
     </div>
     <?php echo $moduser->modalLogin();?>
     
-    <div id="siteLeft" style="display: none">
+    <!-- <div id="siteLeft" style="display: none">
         <div class="bnScroll" id="bnLeft" style="width: 100px">
             <div class="item">
                 <div id="ban_l1">
@@ -66,7 +66,7 @@
             </div>
         </div>
     </div>
-    
+     -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
