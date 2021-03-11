@@ -5,7 +5,8 @@ body {
 padding: 0 0 0 0;
 font-size: 14px;
 background-color: #FAFAFA;
-font-family: tahoma;
+/* thái */
+/* font-family: tahoma; */
 }
 textarea{
 resize: vertical
@@ -339,9 +340,38 @@ font-size: 15px;
 font-weight: bold;
 /* color: #016098; */
 /* letter-spacing: 1px; */
-/* Thái */
-border-bottom: 1px solid rgb(243, 113, 157);
+/* Thái */  
 color: black !important;
+}
+
+/* thái */
+.header-title-news-categories{
+    display: block;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    min-height: 26px;
+    line-height: 26px;
+    margin-left: 15%;
+    font-size: 17px;
+    font-weight: bold;
+    color: black !important;
+}
+.header-title-right-bar{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    min-height: 26px;
+    line-height: 26px;
+    /* text-transform: uppercase; */
+    /* text-indent: 40px; */
+    font-size: 15px;
+    font-weight: bold;
+    /* color: #016098; */
+    /* letter-spacing: 1px; */
+    /* Thái */
+    border-bottom: 1px solid rgb(243, 113, 157);
+    color: black !important;
 }
 
 .header-title.title-star{
@@ -396,6 +426,16 @@ border-top: 1px solid #eaeaea;
 height: 62px;
 padding: 13px 0 13px 0px;
 background-position: 0 18px;
+}
+/* thái */
+.news-list-categories{
+    box-shadow: 2px 2px 4px 4px #e6e0e0;
+}
+.news-list.news-list-1.news-list-categories li{
+    height: unset;
+    margin-left: 15%;
+    border-top: unset;
+    border-bottom: 1px solid #eaeaea;
 }
 .news-list li:first-child{
 border-top: 0px;
@@ -1050,20 +1090,23 @@ margin-top: 7px;
 .news-detail{
 padding: 10px;
 background: #fff;
-border: 1px solid #e3e3e3;
+/* thái */
+/* border: 1px solid #e3e3e3; */
 }
 .news-detail .news-title{
 margin: 0;
 padding: 0;
-font-size: 18px;
+font-size: 31px;
 font-weight: bold;
-color: #015f95;
+/* thái */
+/* color: #015f95; */
 }
 .news-detail .date{
 display: block;
 float: left;
-color: #6a6a6a;
 margin: 5px 0;
+font-weight: bold;
+font-size: 10px;
 }
 .news-detail .share{
 margin: 3px 0 5px 0;
@@ -1218,8 +1261,11 @@ border: 1px solid #e3e3e3;
 /*bner*/
 .img-bner{
 width: 100%;
+}
 /* Thái */
-height: 100%;
+.img-bner-news-ads{
+width: 100%;
+/* height: 100%; */
 }
 .form-group label{
 line-height: 32px;
@@ -1244,4 +1290,18 @@ a {
     font-weight: unset;
     border-bottom: unset;
     margin-left: 2%;
+}
+em {
+    font-style: unset;
+    color: #6a6a6a;
+    font-size: 13px;
+}
+.relative-news-title {
+    font-size: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+.relative-news-item {
+    font-weight: unset;
+    color: #0098f1;
+    border-bottom: 1px solid #0098f1;
 }

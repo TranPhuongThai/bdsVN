@@ -7,9 +7,10 @@ class Modads extends MX_Controller{
     public function index(){
         echo "Hello world!";
     }
-    public function detail($id){
+    public function detail($id, $type = ''){
         $this->load->model("modads/mmodads_site_ads"); 
         $data['ads_list'] = $this->mmodads_site_ads->getDataByID($id);
+        $data['type'] = $type;
         if($data['ads_list']){
             $this->load->view("modads/modads-detail",$data);
         }

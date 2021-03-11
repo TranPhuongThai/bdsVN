@@ -29,7 +29,7 @@
                     <?php echo $modnews->detail($news_check['ID']);?>
                 </div>
             </div>
-            <div class="col-md-4 margin-top">
+            <div class="col-md-3 margin-top">
                 <?php echo $zone->right4();?>
             </div>
         </div>
