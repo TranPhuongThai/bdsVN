@@ -356,8 +356,9 @@ class Modreal extends MX_Controller{
         $data['real_list'] = $this->mmodreal_site_real->getSearchData($text, $menu, $district, $ward, $area1, $area2, $cost1, $cost2, $direction, $bedroom, $sittingroom, $config['per_page'],$this->uri->segment(9));
         $this->load->view("modreal/newData", $data);
     }
-    public function form($text, $district=0, $ward=0, $rmenu=0, $direction=0, $area=0, $cost=0, $bedRoom=0, $sittingRoom=0, $view = 'wide'){
+    public function form($text, $province=0, $district=0, $ward=0, $rmenu=0, $direction=0, $area=0, $cost=0, $bedRoom=0, $sittingRoom=0, $view = 'wide'){
         $data['textSelect'] = $text;
+        $data['provinceSelect'] = $province;
         $data['districtSelect'] = $district;
         $data['wardSelect'] = $ward;
         $data['menuSelect'] = $rmenu;
@@ -366,9 +367,10 @@ class Modreal extends MX_Controller{
         $data['costSelect'] = $cost;
         $data['bedRoomSelect'] = $bedRoom;
         $data['sittingRoomSelect'] = $sittingRoom;
-        $this->load->model(array("modreal/mmodreal_site_real", "modreal/mmodreal_site_add_district", "modreal/mmodreal_site_add_ward", "modreal/mmodreal_site_real_menu"));
+        $this->load->model(array("modreal/mmodreal_site_real", "modreal/mmodreal_site_add_province", "modreal/mmodreal_site_add_district", "modreal/mmodreal_site_add_ward", "modreal/mmodreal_site_real_menu"));
         $this->load->helper(array("form"));
         $data['menu_list'] = $this->mmodreal_site_real_menu->getAllData("ASC");
+        $data['province_list'] = $this->mmodreal_site_add_province->getNationData(1,"ASC",0,99);
         $data['district_list'] = $this->mmodreal_site_add_district->getProvinceData(8,"ASC",0,99);
         $data['ward_list'] = array();
         $this->load->view("modreal/form-".$view, $data);

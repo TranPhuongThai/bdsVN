@@ -20,9 +20,10 @@
     <h2 class="hide"><?php echo $site_description;?></h2>
     
     <nav id="top">
-        <div class="navbar navbar-inverse __navbar-fixed-top">
-            <div class="container">
+        <div class="navbar __navbar-fixed-top">
+            <div class="header-bar">
                 <div class="navbar-header">
+                <a class="logo" href="<?php echo base_url();?>" title="Đất vàng Bình Dương"><img src="/public/template-tiendv/image/datvang.png" title="Đất vàng Bình Dương" alt="Đất vàng Bình Dương"/></a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -32,27 +33,29 @@
                 <!--<a class="navbar-brand" href="#">Đất vàng Bình Dương</a>-->
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
+                    <!-- <ul class="nav navbar-nav">
                         <li><a href="<?php echo base_url();?>" title="Đất vàng Bình Dương"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Trang chủ</a></li>
                         <li><a href="<?php echo base_url();?>gioi-thieu" title="Đất vàng Bình Dương"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Giới thiệu</a></li>
                         <li><a href="<?php echo base_url();?>lien-he" title="Đất vàng Bình Dương"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Liên hệ</a></li>
-                    </ul>
-                    <?php echo $moduser->navbarRight();?>
+                    </ul> -->
+                    <div class="main-menu">
+                        <div class="container">
+                            <?php echo $moduser->navbarRight();?>
+                            <span class="button-main-menu-mobile">Danh mục website</span>
+                            <ul class="nav navbar-nav nav-main-menu">
+                                <?php echo $modmenu->navigation(0,1,$menu);?>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
-        <div class="banner">
+        <!-- <div class="banner">
             <div class="container">
                 <a class="logo" href="<?php echo base_url();?>" title="Đất vàng Bình Dương"><img src="/public/template-tiendv/image/datvang.png" title="Đất vàng Bình Dương" alt="Đất vàng Bình Dương"/></a>
                 <div class="bner"><?php echo $modads->detail(1);?></div>
             </div>
-        </div>
-        <div class="main-menu">
-            <div class="container">
-                <span class="button-main-menu-mobile">Danh mục website</span>
-                <ul class="nav-main-menu">
-                    <?php echo $modmenu->navigation(0,1,$menu);?>
-                </ul>
-            </div>
-        </div>
+        </div> -->
     </nav>

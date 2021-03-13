@@ -1,6 +1,6 @@
 
                 <div class="row m-row">
-                    <?php echo $modreal->form('', 0,0,0,0,0,0,0,0,'right');?>
+                    <?php echo $modreal->form('', 0,0,0,0,0,0,0,0,0,'right');?>
                     <div class="clearfix"></div>
                 </div>
                 <div class="row m-row margin-top">

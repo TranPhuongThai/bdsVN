@@ -29,20 +29,178 @@
 
     <!-- Fixed navbar -->
     <?php echo $zone->top();?>
+    <div class="banner">
+        <img src="<?php echo base_url();?>public/template-tiendv/image/bg.jpg" title="" alt=""/>
+    </div>
     <?php echo $modreal->form('', 0, 0, 0, 0, 0, 0, 0, 0, 'wide');?>
     <div class="wrapper">
         <div class="container">
-            <div class="main-slide col-md-4">
+        <div class="col-md-8 margin-top-bot">
+                <div class="row-left m-row-left">
+                    <span class="header-title">
+                        <span class="col-md-6 active">Nổi bật nhất</span>
+                        
+                        <a class="view-more" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">>>Xem tất cả</a>
+                        <hr  width="88%" align="left" />
+                    </span>
+                    
+                    <div class="news-list-4">
+                        <?php echo $modnews->newsHot(6, 0);?>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 margin-top margin-top-bot">
+                <div class="row m-row margin-top">
+                    <div class="qcao-right">
+                        <?php echo $modads->detail(5);?>
+                        <!-- <a href="#" title="" target="_blank"><img width="100%" src="./public/assets/banner/bnr-1.jpg" title="" alt=""/></a> -->
+                    </div>                  
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12 margin-top-bot">
+                <div class="row m-row">
+                    <span class="header-title">
+                        <span class="col-md-3 active">Tin đăng mới nhất</span>
+                        <a class="view-more" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">>>Xem tất cả</a>
+                        <hr  width="88%" align="left" />
+                    </span>
+                    <?php echo $modreal->newData2(8,0);?>
+                    <div class="clearfix"></div>
+                    <div class="center">
+                    <a href="/mua-ban-nha-dat-binh-duong" class="btn btn-viewmore"><span class="glyphicon glyphicon-forward"></span>Xem tất cả</a>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-12 margin-top-bot bds-area">
+                <div class="row m-row">
+                    <span class="header-title">
+                        <span class="col-md-3 active">BấT động sản theo khu vực</span>
+                        <a class="view-more" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">>>Xem tất cả</a>
+                        <hr  width="88%" align="left" />
+                    </span>
+                    <a href="#" class="bds-area-img-1"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                                    <!-- <span>Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</span> -->
+                                </a>
+                    <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                        <!-- <span>Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</span> -->
+                    </a>
+                    <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                        <!-- <span>Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</span> -->
+                    </a>
+                    <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                        <!-- <span>Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</span> -->
+                    </a><a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                        <!-- <span>Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</span> -->
+                    </a>
+                    
+                    <div class="clearfix"></div>
+                </div>
+                <div class="row m-row">
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                    <div class="bds-area-title center">Hà Nam<span class="color-blue">(150)</span></div>
+                </div>
+            </div>
+            <div class="m-row-left margin-top-bot">
+                <div class="margin-top qcao-left">
+                <?php echo $modads->detail(2);?>
+                </div>
+            </div>
+            <div class="col-md-12 margin-top-bot">
+                <div class="row m-row">
+                    <span class="header-title">
+                        <span class="col-md-3 active">Dự án Bất Động Sản</span>
+                        <a class="view-more" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">>>Xem tất cả</a>
+                        <hr  width="88%" align="left" />
+                    </span>
+                    <?php echo $modreal->newData2(8,0);?>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-8 margin-top-bot">
+                <div class="row-left m-row-left">
+                    <span class="header-title">
+                        <span class="col-md-3 nha-dep-title active">Nội ngoại thất</span>
+                        <span class="col-md-3 phap-li-title">Văn bản pháp lí</span>
+                        <span class="col-md-3 phong-thuy-title">Phong Thuỷ</span>
+                        <a class="view-more nha-dep" href="#">>>Xem tất cả</a>
+                        <a class="view-more phap-li hide" href="#">>>Xem tất cả</a>
+                        <a class="view-more phong-thuy hide" href="#">>>Xem tất cả</a>
+                        <hr  width="88%" align="left" />
+                    </span>
+                    <div class="col-md-12 box-shadow">
+                        <div class="news-list-5 nha-dep">
+                            <?php echo $modnews->newsMenuData2(3,6,0);?>
+                        </div>
+                        <div class="news-list-5 phap-li hide">
+                            <?php echo $modnews->newsMenuData2(5,6,0);?>
+                        </div>
+                        <div class="news-list-5 phong-thuy hide">
+                            <?php echo $modnews->newsMenuData2(4,6,0);?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 margin-top margin-top-bot">
+                <div class="row m-row margin-top">
+                    <div class="qcao-right-1">
+                    <?php echo $modads->detail(5);?>
+                        <!-- <a href="#" title="" target="_blank"><img width="100%" src="./public/assets/banner/bnr-1.jpg" title="" alt=""/></a> -->
+                    </div>                  
+                </div>
+            </div>
+            <div class="col-md-12 margin-top-bot">
+                <div class="row m-row">
+                    <span class="header-title">
+                        <span class="col-md-3 active">hỗ trợ tiện ích</span>
+                        <a class="view-more" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">>>Xem tất cả</a>
+                        <hr  width="88%" align="left" />
+                    </span>
+                    <a class="col-md-3 btn btn-hotro btn-hotro1" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Xem tuổi xây nhà</a>
+                    <a class="col-md-3 btn btn-hotro btn-hotro2" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Dự tính chi phí làm nhà</a>
+                    <a class="col-md-3 btn btn-hotro btn-hotro3" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Tính Lãi Suất</a>
+                    <a class="col-md-3 btn btn-hotro btn-hotro4" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Tư vấn phong thuỷ</a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-12 margin-top-bot">
+                <div class="row m-row">
+                    <span class="header-title">
+                        <span class="col-md-3 active">Đối tác doanh nghiệp</span>
+                        <a class="view-more" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">>>Xem tất cả</a>
+                        <hr  width="88%" align="left" />
+                    </span>
+                    
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="main-slide col-md-12">
                 <?php echo $modslide->jcarousel();?>
             </div>
+            <!-- <div class="main-slide col-md-4">
+                <?php //echo $modslide->jcarousel();?>
+            </div>
             <div class="col-md-4 col-sm-6 m-margin-top">
-                <?php echo $modnews->newsData(5, 0);?>
+                <?php //echo $modnews->newsData(5, 0);?>
             </div>
             <div class="col-md-4 col-sm-6 m-margin-top">
                 <div class="row m-row">
                     <div class="header-title title-star">Tin nổi bật</div>
                     <div class="clearfix"></div>
-                    <?php echo $modnews->newsHot(4, 0);?>
+                    <?php //echo $modnews->newsHot(4, 0);?>
                 </div>
             </div>
             
@@ -106,12 +264,41 @@
                 </div>
             </div>
             <div class="col-md-4 margin-top">
-                <?php echo $zone->right();?>
-            </div>
+                <?php //echo $zone->right();?>
+            </div> -->
             
             
         </div>
     </div>
+    <script>
+        $(".nha-dep-title").click(function(){
+            $(".nha-dep").removeClass("hide");
+            $(".phap-li").addClass("hide");
+            $(".phong-thuy").addClass("hide");
+
+            $(".nha-dep-title").addClass("active");
+            $(".phap-li-title").removeClass("active");
+            $(".phong-thuy-title").removeClass("active");
+        });
+        $(".phap-li-title").click(function(){
+            $(".phap-li").removeClass("hide");
+            $(".nha-dep").addClass("hide");
+            $(".phong-thuy").addClass("hide");
+
+            $(".phap-li-title").addClass("active");
+            $(".nha-dep-title").removeClass("active");
+            $(".phong-thuy-title").removeClass("active");
+        });
+        $(".phong-thuy-title").click(function(){
+            $(".phong-thuy").removeClass("hide");
+            $(".phap-li").addClass("hide");
+            $(".nha-dep").addClass("hide");
+
+            $(".phong-thuy-title").addClass("active");
+            $(".phap-li-title").removeClass("active");
+            $(".nha-dep-title").removeClass("active");
+        });
+    </script>
     <?php echo $zone->bot();?>
 
 </body>
