@@ -16,7 +16,25 @@
 
 ?>
 
-    
+    <div class="col-md-12 margin-top-bot">
+        <div class="container">
+            <div class="row m-row">
+                <span class="header-title">
+                    <span class="col-md-3 active">Đối tác doanh nghiệp</span>
+                    <!-- <a class="view-more" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">>>Xem tất cả</a> -->
+                    <hr  width="100%" align="left" />
+                </span>
+                <div class="partner-slider">
+                    <div class="item"><img src="<?php echo base_url();?>public/template-tiendv/image/logo/p-1.png" alt=""></div>
+                    <div class="item"><img src="<?php echo base_url();?>public/template-tiendv/image/logo/p-2.png" alt=""></div>
+                    <div class="item"><img src="<?php echo base_url();?>public/template-tiendv/image/logo/p-3.png" alt=""></div>
+                    <div class="item"><img src="<?php echo base_url();?>public/template-tiendv/image/logo/p-4.png" alt=""></div>
+                    <div class="item"><img src="<?php echo base_url();?>public/template-tiendv/image/logo/p-5.png" alt=""></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
     <div class="main-menu margin-top">
         <div class="container">
             <ul class="nav-main-menu nav-main-menu-2">
@@ -85,5 +103,6 @@
     <script src="<?php echo base_url();?>public/template-tiendv/js/docs.min.js"></script>
     <script src="<?php echo base_url();?>public/template-tiendv/js/jquery.validate.js"></script>
     <script src="<?php echo base_url();?>public/template-tiendv/js/script.js"></script>
+    <script src="<?php echo base_url();?>public/template-tiendv/plugin/owl-carousel/owl.carousel.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="<?php echo base_url();?>public/template-tiendv/js/ie10-viewport-bug-workaround.js"></script>

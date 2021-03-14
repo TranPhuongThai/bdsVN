@@ -35,7 +35,7 @@
     
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url();?>public/template-tiendv/css/theme.css" rel="stylesheet">
-    
+    <link href="<?php echo base_url();?>public/template-tiendv/plugin/owl-carousel/owl.carousel.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="public/template-tiendv/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="<?php echo base_url();?>public/template-tiendv/js/ie-emulation-modes-warning.js"></script>

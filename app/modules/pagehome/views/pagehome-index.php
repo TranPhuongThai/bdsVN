@@ -176,20 +176,9 @@
                     <div class="clearfix"></div>
                 </div>
             </div>
-            <div class="col-md-12 margin-top-bot">
-                <div class="row m-row">
-                    <span class="header-title">
-                        <span class="col-md-3 active">Đối tác doanh nghiệp</span>
-                        <a class="view-more" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">>>Xem tất cả</a>
-                        <hr  width="88%" align="left" />
-                    </span>
-                    
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-            <div class="main-slide col-md-12">
-                <?php echo $modslide->jcarousel();?>
-            </div>
+            <!-- <div class="main-slide col-md-12">
+                <?php //echo $modslide->jcarousel();?>
+            </div> -->
             <!-- <div class="main-slide col-md-4">
                 <?php //echo $modslide->jcarousel();?>
             </div>
