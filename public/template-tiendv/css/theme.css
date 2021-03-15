@@ -4,8 +4,14 @@
 body {
 padding: 0 0 0 0;
 font-size: 14px;
+<<<<<<< HEAD
 /* background-color: #FAFAFA; */
 font-family: tahoma;
+=======
+background-color: #FAFAFA;
+/* thái */
+/* font-family: tahoma; */
+>>>>>>> dev.thai
 }
 textarea{
 resize: vertical
@@ -180,10 +186,14 @@ border-color: #2f85be;
 }
 /*banner*/
 .banner{
+<<<<<<< HEAD
     /*Phong*/
     position: absolute;
     height: 320px;
 /* __margin-top: 35px;
+=======
+margin-top: 35px;
+>>>>>>> dev.thai
 height: 140px;
 background-color: #fff; */
 }
@@ -358,11 +368,46 @@ line-height: 26px;
 font-size: 15px;
 font-weight: bold;
 /* color: #016098; */
+<<<<<<< HEAD
 letter-spacing: 1px;
 /* Thái */
 border-bottom: 1px solid rgb(243, 113, 157);
+=======
+/* letter-spacing: 1px; */
+/* Thái */  
+>>>>>>> dev.thai
 color: black !important;
     /* border-bottom: 1px solid #e0e0e0; */
+}
+
+/* thái */
+.header-title-news-categories{
+    display: block;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    min-height: 26px;
+    line-height: 26px;
+    margin-left: 15%;
+    font-size: 17px;
+    font-weight: bold;
+    color: black !important;
+}
+.header-title-right-bar{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    min-height: 26px;
+    line-height: 26px;
+    /* text-transform: uppercase; */
+    /* text-indent: 40px; */
+    font-size: 15px;
+    font-weight: bold;
+    /* color: #016098; */
+    /* letter-spacing: 1px; */
+    /* Thái */
+    border-bottom: 1px solid rgb(243, 113, 157);
+    color: black !important;
 }
 
 .header-title.title-star{
@@ -419,6 +464,16 @@ height: 62px;
 /* padding: 13px 0 13px 0px; */
 padding: 13px 0 13px 15px;
 background-position: 0 18px;
+}
+/* thái */
+.news-list-categories{
+    box-shadow: 2px 2px 4px 4px #e6e0e0;
+}
+.news-list.news-list-1.news-list-categories li{
+    height: unset;
+    margin-left: 15%;
+    border-top: unset;
+    border-bottom: 1px solid #eaeaea;
 }
 .news-list li:first-child{
 border-top: 0px;
@@ -995,13 +1050,16 @@ padding-right: 5px;
 
 /* footer */
 #footer{
+color: white;
 position: relative;
 padding-bottom: 20px;
-background: url(../image/bg-footer.png) top left repeat;
+/* background: url(../image/bg-footer.png) top left repeat; */
+background-color: #024073;
 }
 .hr-info{
-border-top: 1px solid #fafafa;
-border-bottom: 1px solid #cacaca;
+/* thái */
+/* border-top: 1px solid #fafafa; */
+border-bottom: 1px solid #023761;
 margin-top: 13px;
 }
 .web-info{
@@ -1123,20 +1181,23 @@ margin-top: 7px;
 .news-detail{
 padding: 10px;
 background: #fff;
-border: 1px solid #e3e3e3;
+/* thái */
+/* border: 1px solid #e3e3e3; */
 }
 .news-detail .news-title{
 margin: 0;
 padding: 0;
-font-size: 18px;
+font-size: 31px;
 font-weight: bold;
-color: #015f95;
+/* thái */
+/* color: #015f95; */
 }
 .news-detail .date{
 display: block;
 float: left;
-color: #6a6a6a;
 margin: 5px 0;
+font-weight: bold;
+font-size: 10px;
 }
 .news-detail .share{
 margin: 3px 0 5px 0;
@@ -1291,8 +1352,11 @@ border: 1px solid #e3e3e3;
 /*bner*/
 .img-bner{
 width: 100%;
+}
 /* Thái */
-height: 100%;
+.img-bner-news-ads{
+width: 100%;
+/* height: 100%; */
 }
 .form-group label{
 line-height: 32px;
@@ -1318,6 +1382,49 @@ a {
     border-bottom: unset;
     margin-left: 2%;
 }
+em {
+    font-style: unset;
+    color: #6a6a6a;
+    font-size: 13px;
+}
+.relative-news-title {
+    font-size: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+.relative-news-item {
+    font-weight: unset;
+    color: #0098f1;
+    border-bottom: 1px solid #0098f1;
+}
+.container-fluid {
+    width: 80%;
+}
+.footer-content {
+    margin-top: 2%;
+}
+.logo-bot{
+    margin-right: 3%;
+}
+.logo-bot .margin-top{
+    margin-top: 10%;
+}
+.link-bottom {  
+    color: #b4bfd1;
+}
+.first-link-bottom {
+    color: white;
+    font-size: 16px;
+}
+.row-link-bottom {
+    margin-top: 3%;
+}
+.bottom-text {
+    display: contents;
+}
+.blue-text {
+    color: #0287b7;
+}
+/* Hết phần của Thái */
 
 /* Phong */
 @media (min-width: 1600px){
@@ -1488,3 +1595,5 @@ a {
     font-weight: bold;
     margin: 10px;
 }
+
+/* hết của Phong */

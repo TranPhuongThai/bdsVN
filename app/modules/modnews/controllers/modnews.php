@@ -190,6 +190,34 @@ class Modnews extends MX_Controller{
 
     }
 
+    public function newsCategoriesMenu($menu = 1, $record_number = 7, $record_start = 0){
+
+        $this->load->model(array("modnews/mmodnews_site_news","modnews/mmodnews_site_news_menu"));
+
+        $this->load->library(array("pagination"));
+        
+        $data['modnews'] = $this->load->module('modnews');
+
+        if($menu && is_numeric($menu)){
+
+            $data['menu_check'] = $this->mmodnews_site_news_menu->getDataByID($menu);
+
+            if($data['menu_check']){
+            
+                $data['menu_root'] = $this->my_site_menu->_getRootNewsMenu($menu);
+
+                $data['menu_root_check'] = $this->mmodnews_site_news_menu->getDataByID($data['menu_root']);
+                
+                $data['menu_list'] = $this->mmodnews_site_news_menu->getPidData($data['menu_root'],50,0);
+                
+                $this->load->view("modnews/modnews-newsCategoriesMenu", $data);
+
+            }
+
+        }
+
+    }
+
     public function newsMenuSlide($menu = 1, $record_number = 5, $record_start = 0){
 
         $this->load->model(array("modnews/mmodnews_site_news","modnews/mmodnews_site_news_menu"));
@@ -319,6 +347,38 @@ class Modnews extends MX_Controller{
                 //$data['comment_list'] = $this->mmodnews_site_news_comment->getNewsPIDData(1, $id, 0, 'DESC', 99, 0);
 
                 $data['news_list'] = $this->mmodnews_site_news->getSimilarData($data['news_check']['Menu'], $id, "DESC", 5,0);
+
+                $date =date_create($data['news_check']['Dateset']);
+                
+                $weekday = date_format($date, 'l');
+                
+                $weekday = strtolower($weekday);
+
+                switch($weekday) {
+                    case 'monday':
+                        $weekday = 'Thứ hai';
+                        break;
+                    case 'tuesday':
+                        $weekday = 'Thứ ba';
+                        break;
+                    case 'wednesday':
+                        $weekday = 'Thứ tư';
+                        break;
+                    case 'thursday':
+                        $weekday = 'Thứ năm';
+                        break;
+                    case 'friday':
+                        $weekday = 'Thứ sáu';
+                        break;
+                    case 'saturday':
+                        $weekday = 'Thứ bảy';
+                        break;
+                    default:
+                        $weekday = 'Chủ nhật';
+                        break;
+                }
+                // echo $weekday . ' - ' . date_format($date, 'd/m/Y');
+                $data['news_check']['Dateset'] = $weekday . ' - ' . date_format($date, 'd/m/Y');
 
                 $this->load->view("modnews/modnews-detail", $data);
 

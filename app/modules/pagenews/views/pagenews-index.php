@@ -30,7 +30,7 @@
                         <?php echo $modnews->allNews();?>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <?php echo $zone->right2();?>
                 </div>
             </div>
