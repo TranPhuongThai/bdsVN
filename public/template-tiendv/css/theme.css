@@ -178,7 +178,7 @@ border-color: #2f85be;
 }
 /*banner*/
 .banner{
-__margin-top: 35px;
+margin-top: 35px;
 height: 140px;
 background-color: #fff;
 }
@@ -969,8 +969,9 @@ padding-bottom: 20px;
 background-color: #024073;
 }
 .hr-info{
-border-top: 1px solid #fafafa;
-border-bottom: 1px solid #cacaca;
+/* thái */
+/* border-top: 1px solid #fafafa; */
+border-bottom: 1px solid #023761;
 margin-top: 13px;
 }
 .web-info{
@@ -1316,10 +1317,22 @@ em {
 .logo-bot{
     margin-right: 3%;
 }
-.link-bottom {
+.logo-bot .margin-top{
+    margin-top: 10%;
+}
+.link-bottom {  
     color: #b4bfd1;
 }
 .first-link-bottom {
     color: white;
     font-size: 16px;
+}
+.row-link-bottom {
+    margin-top: 3%;
+}
+.bottom-text {
+    display: contents;
+}
+.blue-text {
+    color: #0287b7;
 }
