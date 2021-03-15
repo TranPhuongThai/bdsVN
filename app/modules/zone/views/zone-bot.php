@@ -28,7 +28,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 footer-content">
-                <div class="col-md-3 margin-top logo-bot">
+                <div class="col-md-4 margin-top logo-bot">
                     <a href="#" class="logo" href="<?php echo base_url();?>" title="Đất vàng bình dương"><img width="100%" src="/public/template-tiendv/image/datvang.png" title="Đất vàng bình dương" alt="Đất vàng bình dương"/></a>
                     <div class="row text-center margin-top">
                         Công ty cổ phần PropertyGuru Việt Nam
@@ -36,6 +36,11 @@
                     <div class="row text-center blue-text">
                         Một thành viên của tập đoàn PropertyGuru
                     </div>
+                    <div class="row margin-left">
+                    Tầng 31 Phạm Hùng, Keangnam HaNoi Landmark, Phạm Hùng,</br> Nam Từ Liêm, Hà Nội </br>
+                    (024) 3562 5939 - (024) 3562 5940
+                    </div>
+                    
                 </div>
                 <div class="col-md-2">
                     <div class="row"><a href="#" class="link-bottom first-link-bottom"><b>Bất động sản TPHCM</b></a></div>

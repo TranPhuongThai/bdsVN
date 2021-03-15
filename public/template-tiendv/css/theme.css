@@ -1401,9 +1401,11 @@ em {
 }
 .footer-content {
     margin-top: 2%;
+    margin-bottom: 3%;
 }
 .logo-bot{
     margin-right: 3%;
+    margin-left: -3%;
 }
 .logo-bot .margin-top{
     margin-top: 10%;
@@ -1423,6 +1425,10 @@ em {
 }
 .blue-text {
     color: #0287b7;
+}
+.logo-bot .margin-left {
+    font-size: 12px;
+    margin-left: 26%;
 }
 /* Hết phần của Thái */
 
