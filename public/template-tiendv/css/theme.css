@@ -962,9 +962,11 @@ padding-right: 5px;
 
 /* footer */
 #footer{
+color: white;
 position: relative;
 padding-bottom: 20px;
-background: url(../image/bg-footer.png) top left repeat;
+/* background: url(../image/bg-footer.png) top left repeat; */
+background-color: #024073;
 }
 .hr-info{
 border-top: 1px solid #fafafa;
@@ -1304,4 +1306,20 @@ em {
     font-weight: unset;
     color: #0098f1;
     border-bottom: 1px solid #0098f1;
+}
+.container-fluid {
+    width: 80%;
+}
+.footer-content {
+    margin-top: 2%;
+}
+.logo-bot{
+    margin-right: 3%;
+}
+.link-bottom {
+    color: #b4bfd1;
+}
+.first-link-bottom {
+    color: white;
+    font-size: 16px;
 }
