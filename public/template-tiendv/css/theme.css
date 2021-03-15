@@ -1426,9 +1426,10 @@ em {
 .blue-text {
     color: #0287b7;
 }
-.logo-bot .margin-left {
-    font-size: 12px;
-    margin-left: 26%;
+.logo-bot .margin-left-top {
+    font-size: 14px;
+    margin-left: 22%;
+    margin-top: 2%;
 }
 /* Hết phần của Thái */
 

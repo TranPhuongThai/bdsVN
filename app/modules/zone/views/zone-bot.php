@@ -36,9 +36,9 @@
                     <div class="row text-center blue-text">
                         Một thành viên của tập đoàn PropertyGuru
                     </div>
-                    <div class="row margin-left">
-                    Tầng 31 Phạm Hùng, Keangnam HaNoi Landmark, Phạm Hùng,</br> Nam Từ Liêm, Hà Nội </br>
-                    (024) 3562 5939 - (024) 3562 5940
+                    <div class="row margin-left-top">
+                        <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Tầng 31 Phạm Hùng, Keangnam HaNoi Landmark, Phạm Hùng, Nam Từ Liêm, Hà Nội </br></br>
+                        <i class="fas fa-phone-alt"></i>&nbsp;&nbsp;(024) 3562 5939 - (024) 3562 5940
                     </div>
                     
                 </div>
@@ -116,7 +116,6 @@
             <div class="clearfix"></div>
         </div>
     </div>
-     -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
