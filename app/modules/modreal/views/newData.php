@@ -11,14 +11,14 @@
             <span class="news-date sale-news-date"><?php echo date("d/m/Y",strtotime($row['DateUp']));?></span>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4">
         <div class="row-left m-row-left">
             <a class="img" href="<?php echo base_url()._setURL($row['Name'])."-real-".$row['ID'].".html";?>" title="<?php echo $row['Name'];?>"><img src="<?php echo $row['Thumb1'];?>" title="<?php echo $row['Name'];?>" alt="<?php echo $row['Name'];?>"/></a>    
         </div>    
     </div>
-    <div class="col-sm-9 sale-news-list-detail">
+    <div class="col-sm-8 sale-news-list-detail">
         <div class="row description">
-        aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa 
+        <?php echo $row['Content'];?>
         </div>
         <div class="row">
             <label><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;</label> <?php echo (int)($row['LandArea']);?> m<sup>2</sup><br />

@@ -5,12 +5,12 @@
                 </div>
                 <div class="row m-row margin-top">
                     <div class="qcao-right zone-right2-ads1">
-                        <?php echo $modads->detail(5, 'news-ads');?>
+                        <?php echo $modads->detail(7, 'news-ads');?>
                     </div>                  
                 </div>
                 <div class="row m-row margin-top">
                     <div class="qcao-right zone-right2-ads2">
-                        <?php echo $modads->detail(6, 'news-ads');?>
+                        <?php echo $modads->detail(8, 'news-ads');?>
                     </div>                  
                 </div>
                 <div class="row m-row margin-top">
@@ -21,6 +21,6 @@
                 </div>
                 <div class="row m-row margin-top">
                     <div class="qcao-right zone-right2-ads1">
-                        <?php echo $modads->detail(5);?>
+                        <?php echo $modads->detail(6);?>
                     </div>                  
                 </div>

@@ -52,3 +52,4 @@
     <![endif]-->
     <script src="<?php echo base_url();?>public/template-tiendv/js/jquery.1.11.3.min.js"></script>
     <script src="<?php echo base_url();?>public/template-tiendv/js/jquery.cookie.js"></script>
+    <script src="<?php echo base_url();?>public/template-tiendv/js/custom1.js"></script>
