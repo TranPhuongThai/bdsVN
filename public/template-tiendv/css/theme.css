@@ -4,14 +4,9 @@
 body {
 padding: 0 0 0 0;
 font-size: 14px;
-<<<<<<< HEAD
-/* background-color: #FAFAFA; */
-font-family: tahoma;
-=======
 background-color: #FAFAFA;
 /* thái */
 /* font-family: tahoma; */
->>>>>>> dev.thai
 }
 textarea{
 resize: vertical
@@ -186,15 +181,11 @@ border-color: #2f85be;
 }
 /*banner*/
 .banner{
-<<<<<<< HEAD
-    /*Phong*/
+/*Phong*/
     position: absolute;
     height: 320px;
-/* __margin-top: 35px;
-=======
-margin-top: 35px;
->>>>>>> dev.thai
-height: 140px;
+/* margin-top: 35px; */
+/*height: 140px;
 background-color: #fff; */
 }
 .banner .logo img{
@@ -215,12 +206,12 @@ margin: 25px 0 0 0;
     }
 }
 /*menu*/
-.main-menu{
+/* .main-menu{ */
 /* position: relative;
 z-index: 11; */
 /* background: #015F95; */
 /* min-height: 90px; */
-}
+/* } */
 .main-menu .container{
 position: relative;
 z-index: 10;
@@ -300,12 +291,12 @@ display: none!important;
       display: block;
       text-align: center;
   }
-  .main-menu ul{
+  /* .main-menu ul{ */
     /* display: none; */
     /* width: 100%; */
     /* background-color: #266A9B;
     border-top: 1px solid #2f85be; */
-  }
+  /* } */
   .main-menu ul li{
     position: static!important;
     width: 100%;
@@ -317,8 +308,8 @@ display: none!important;
     position: static!important;
     border: 0;
   }
-  .main-menu ul li ul li{
-  }
+  /* .main-menu ul li ul li{
+  } */
   .main-menu ul li ul li a{
     padding: 0 0 0 30px;
     color: #fff;
@@ -353,8 +344,6 @@ color: #337ab7;
 margin-bottom: 0;
 bottom: 10px;
 }
-.carousel-caption{
-}
 /*lastest news*/
 .header-title{
 display: block;
@@ -368,16 +357,12 @@ line-height: 26px;
 font-size: 15px;
 font-weight: bold;
 /* color: #016098; */
-<<<<<<< HEAD
-letter-spacing: 1px;
 /* Thái */
-border-bottom: 1px solid rgb(243, 113, 157);
-=======
+/* border-bottom: 1px solid rgb(243, 113, 157); */
 /* letter-spacing: 1px; */
 /* Thái */  
->>>>>>> dev.thai
 color: black !important;
-    /* border-bottom: 1px solid #e0e0e0; */
+border-bottom: 1px solid #e0e0e0;
 }
 
 /* thái */
@@ -736,10 +721,10 @@ color: #424242;
     margin: 70px 0;
 }
 .qcao-right img{
-    height: 320px;
+    height: 360px;
 }
 .qcao-right-1 img{
-    height: 451px;
+    height: 489px;
     margin-bottom: 25px;
 }
 .news-list-5-2{
@@ -760,11 +745,11 @@ list-style: none;
 border-top: 1px solid #e3e3e3;
 /* margin: 5px; */
 }
-.news-list-5-content ul.news-list-5-2 li{
+/* .news-list-5-content ul.news-list-5-2 li{ */
     /*Phong*/
 /* padding: 5px 0 5px 20px; */
 /* background: url(../image/arrow-4.png) 5px 11px no-repeat; */
-}
+/* } */
 .news-list-5-content ul.news-list-5-2 li a{
 display: inline-block;
 /*Phong*/
@@ -918,7 +903,7 @@ margin: 0;
 padding: 0;
 list-style: none;
 }
-#main-search ul li{
+/* #main-search ul li{
 display: inline-block;
 padding: 0 30px;
 margin: 0;
@@ -929,16 +914,11 @@ cursor: pointer;
 color: #424242;
 text-transform: uppercase;
 background: url(../image/bg-search-tab.png) top left repeat;
-}
-#main-search ul li.active{
+} */
+/* #main-search ul li.active{
 color: #fff;
 background: url(../image/bg-search.png) top left repeat;
-}
-#main-search form{
-/*Phong*/
-/* padding: 10px 13px 15px 13px;
-background: url(../image/bg-search.png) top left repeat; */
-}
+} */
 #main-search form .form-item{
 padding-left: 2px;
 padding-right: 2px;
@@ -1548,7 +1528,7 @@ em {
     display: block;
     overflow: hidden;
     font-size: 12px;
-    /* margin: 5px; */
+    padding: 10px 0;
 }
 .btn-hotro{
     height: 100px;
@@ -1577,6 +1557,9 @@ em {
 }
 .margin-top-bot{
     margin: 30px 0;
+}
+.bds-area-img img{
+    height: 100%;
 }
 .bds-area-img-1 img{
     float: left;
