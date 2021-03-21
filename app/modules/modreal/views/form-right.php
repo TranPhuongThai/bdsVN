@@ -4,7 +4,7 @@ $form = array(
     "method"    => "GET",
 );
 
-$menuSelectList = array(0=>'Danh mục BĐS');
+$menuSelectList = array(0=>'Loại bất động sản');
 foreach($menu_list as $row){
     $menuSelectList[$row['ID']] = $row['Name'];
 }
@@ -78,8 +78,8 @@ $sittingRoomSelectList = array(
 ?>
 <div id="main-search" class="main-search-2">
     <ul>
-        <li class="active" data-type="0">Nhà bán</li>
-        <li data-type="2">Đất bán</li>
+        <li class="active" data-type="0">BĐS BÁN</li>
+        <li data-type="2">BĐS CHO THUÊ</li>
     </ul>
     <div class="clearfix"></div>
     <?php echo form_open("tim-nha-dat-binh-duong",$form);?>

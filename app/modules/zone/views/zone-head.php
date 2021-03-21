@@ -26,6 +26,9 @@
     <?php echo (isset($no_index)) ? '<meta name="robots" content="noindex, nofollow">' : '';?>
     <link rel="icon" href="/public/template-tiendv/image/favicon.png">
 
+    <!-- font awesome tạm thời - Thái -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+
 	<title><?php echo $site_title;?></title>
     
     <!-- Bootstrap core CSS -->
@@ -35,6 +38,8 @@
     
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url();?>public/template-tiendv/css/theme.css" rel="stylesheet">
+    <!-- Đây là file custom css của Thái -->
+    <link href="<?php echo base_url();?>public/template-tiendv/css/custom1.css" rel="stylesheet">
     <link href="<?php echo base_url();?>public/template-tiendv/plugin/owl-carousel/owl.carousel.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="public/template-tiendv/js/ie8-responsive-file-warning.js"></script><![endif]-->

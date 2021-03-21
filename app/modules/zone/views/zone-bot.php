@@ -28,7 +28,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 footer-content">
-                <div class="col-md-3 margin-top logo-bot">
+                <div class="col-md-4 margin-top logo-bot">
                     <a href="#" class="logo" href="<?php echo base_url();?>" title="Đất vàng bình dương"><img width="100%" src="/public/template-tiendv/image/datvang.png" title="Đất vàng bình dương" alt="Đất vàng bình dương"/></a>
                     <div class="row text-center margin-top">
                         Công ty cổ phần PropertyGuru Việt Nam
@@ -36,6 +36,11 @@
                     <div class="row text-center blue-text">
                         Một thành viên của tập đoàn PropertyGuru
                     </div>
+                    <div class="row margin-left-top">
+                        <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Tầng 31 Phạm Hùng, Keangnam HaNoi Landmark, Phạm Hùng, Nam Từ Liêm, Hà Nội </br></br>
+                        <i class="fas fa-phone-alt"></i>&nbsp;&nbsp;(024) 3562 5939 - (024) 3562 5940
+                    </div>
+                    
                 </div>
                 <div class="col-md-2">
                     <div class="row"><a href="#" class="link-bottom first-link-bottom"><b>Bất động sản TPHCM</b></a></div>
@@ -111,7 +116,6 @@
             <div class="clearfix"></div>
         </div>
     </div>
-     -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -27,8 +27,8 @@
             <div class="col-md-8 margin-top">
                 <div class="row-left m-row-left">
                     <div class="header-title title-news">
-                        <?php echo $titleWeb;?>
-                        <form>
+                        <?php echo $titleWeb;?> </br>
+                        <!-- <form>
                             <span>Sắp xếp theo</span>
                             <select name="fSortReal">
                                 <option data-fSort="DateUp" data-fOrder="DESC">Thông thường</option>
@@ -38,8 +38,9 @@
                                 <option data-fSort="usableArea" data-fOrder="ASC" <?php echo (isset($_COOKIE['fSort']) && $_COOKIE['fSort'] == 'Area' && $_COOKIE['fOrder'] == 'ASC') ? 'selected="selected"' : '';?>>Diện tích nhỏ nhất</option>
                                 <option data-fSort="usableArea" data-fOrder="DESC" <?php echo (isset($_COOKIE['fSort']) && $_COOKIE['fSort'] == 'Area' && $_COOKIE['fOrder'] == 'DESC') ? 'selected="selected"' : '';?>>Diện tích lớn nhất</option>
                             </select>
-                        </form>
+                        </form> -->
                     </div>
+                    <b>Tổng hợp tin đăng rao bán bất động sản cho cả nước, giá rẻ tìm là thấy</b>
                     <?php echo $modreal->typeData($type, 10, 0, true);?>
                 </div>
             </div>

@@ -4,16 +4,14 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="row m-row margin-top">
-                    <span class="header-title title-menu">Danh mục nhà đất</span>
-                    <div class="clearfix"></div>
-                    <?php echo $modreal->listMenu();?>
-                    <div class="clearfix"></div>
+                    <div class="qcao-right zone-right2-ads1">
+                        <?php echo $modads->detail(5, 'news-ads');?>
+                    </div>                  
                 </div>
                 <div class="row m-row margin-top">
-                    <span class="header-title title-menu">Nhà đất khu vực</span>
-                    <div class="clearfix"></div>
-                    <?php echo $modreal->listDistrict();?>
-                    <div class="clearfix"></div>
+                    <div class="qcao-right zone-right2-ads2">
+                        <?php echo $modads->detail(6, 'news-ads');?>
+                    </div>                  
                 </div>
                 <div class="row m-row margin-top">
                     <span class="header-title title-support">Hỗ trợ trực tuyến</span>
@@ -22,7 +20,7 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="row m-row margin-top">
-                    <div class="qcao-right">
+                    <div class="qcao-right zone-right2-ads1">
                         <?php echo $modads->detail(5);?>
                     </div>                  
                 </div>
