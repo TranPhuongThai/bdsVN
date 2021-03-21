@@ -38,6 +38,8 @@
     
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url();?>public/template-tiendv/css/theme.css" rel="stylesheet">
+    <!-- Đây là file custom css của Thái -->
+    <link href="<?php echo base_url();?>public/template-tiendv/css/custom1.css" rel="stylesheet">
     <link href="<?php echo base_url();?>public/template-tiendv/plugin/owl-carousel/owl.carousel.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="public/template-tiendv/js/ie8-responsive-file-warning.js"></script><![endif]-->

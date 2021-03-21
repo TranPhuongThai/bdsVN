@@ -4,14 +4,9 @@
 body {
 padding: 0 0 0 0;
 font-size: 14px;
-<<<<<<< HEAD
-/* background-color: #FAFAFA; */
-font-family: tahoma;
-=======
 background-color: #FAFAFA;
 /* thái */
 /* font-family: tahoma; */
->>>>>>> dev.thai
 }
 textarea{
 resize: vertical
@@ -186,14 +181,11 @@ border-color: #2f85be;
 }
 /*banner*/
 .banner{
-<<<<<<< HEAD
     /*Phong*/
     position: absolute;
     height: 320px;
 /* __margin-top: 35px;
-=======
 margin-top: 35px;
->>>>>>> dev.thai
 height: 140px;
 background-color: #fff; */
 }
@@ -368,14 +360,11 @@ line-height: 26px;
 font-size: 15px;
 font-weight: bold;
 /* color: #016098; */
-<<<<<<< HEAD
 letter-spacing: 1px;
 /* Thái */
 border-bottom: 1px solid rgb(243, 113, 157);
-=======
 /* letter-spacing: 1px; */
 /* Thái */  
->>>>>>> dev.thai
 color: black !important;
     /* border-bottom: 1px solid #e0e0e0; */
 }
@@ -413,9 +402,10 @@ color: black !important;
 .header-title.title-star{
 background: url(../image/icon-most-read.png) bottom left no-repeat;
 }
-.header-title.title-news{
+/* Thái */
+/* .header-title.title-news{
 background: url(../image/icon-foruser.png) bottom left no-repeat;
-}
+} */
 /* Thái */
 /* .header-title.title-pt{
 background: url(../image/icon-fengshui.png) bottom left no-repeat;
@@ -1371,67 +1361,7 @@ font-weight: normal;
 margin-top: 5px;
 }
 
-/* Thái */
-a {
-    color: black;
-}
-.header-news-title {
-    font-size: 29px;
-    margin-bottom: 5%;
-    font-weight: unset;
-    border-bottom: unset;
-    margin-left: 2%;
-}
-em {
-    font-style: unset;
-    color: #6a6a6a;
-    font-size: 13px;
-}
-.relative-news-title {
-    font-size: 20px;
-    border-bottom: 1px solid #eaeaea;
-}
-.relative-news-item {
-    font-weight: unset;
-    color: #0098f1;
-    border-bottom: 1px solid #0098f1;
-}
-.container-fluid {
-    width: 80%;
-}
-.footer-content {
-    margin-top: 2%;
-    margin-bottom: 3%;
-}
-.logo-bot{
-    margin-right: 3%;
-    margin-left: -3%;
-}
-.logo-bot .margin-top{
-    margin-top: 10%;
-}
-.link-bottom {  
-    color: #b4bfd1;
-}
-.first-link-bottom {
-    color: white;
-    font-size: 16px;
-}
-.row-link-bottom {
-    margin-top: 3%;
-}
-.bottom-text {
-    display: contents;
-}
-.blue-text {
-    color: #0287b7;
-}
-.logo-bot .margin-left-top {
-    font-size: 14px;
-    margin-left: 22%;
-    margin-top: 2%;
-}
-/* Hết phần của Thái */
+
 
 /* Phong */
 @media (min-width: 1600px){

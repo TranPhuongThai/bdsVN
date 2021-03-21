@@ -42,6 +42,7 @@
         "30"=>"Trên 3 tỷ",
     );
 ?>
+<?php if($type != 1) echo 2; ?>
                         <form class="form-horizontal form-search" action="<?php echo base_url('/tim-kiem-nha-dat-binh-duong');?>" method="GET">
                             <div class="form-group">
                                 <label for="inputDistrict" class="col-sm-4 control-label">Quận</label>

@@ -48,16 +48,18 @@ class Pagereal extends MX_Controller{
     public function type($type){
         
         $data['type'] = $type;
-        if($type == 1){
-            $data['menu'] = 2;
-            $url = 'nha-ban';
-            $data['titleWeb'] = 'Nhà bán';
-        }else{
-            $data['menu'] = 3;
-            $url = 'dat-ban';
-            $data['titleWeb'] = 'Đất bán';
-        }
-
+        // if($type == 1){
+        //     $data['menu'] = 2;
+        //     $url = 'nha-ban';
+        //     $data['titleWeb'] = 'Nhà bán';
+        // }else{
+        //     $data['menu'] = 3;
+        //     $url = 'dat-ban';
+        //     $data['titleWeb'] = 'Đất bán';
+        // }
+        $data['menu'] = 2;
+        $url = 'nha-dat-ban';
+        $data['titleWeb'] = 'Nhà đất bán';
         $data['seo'] = $this->my_site_menu->_loadSeoMenu($data['menu']);
 
         //modules

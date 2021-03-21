@@ -1,0 +1,112 @@
+a {
+    color: black;
+}
+.header-news-title {
+    font-size: 29px;
+    margin-bottom: 5%;
+    font-weight: unset;
+    border-bottom: unset;
+    margin-left: 2%;
+}
+em {
+    font-style: unset;
+    color: #6a6a6a;
+    font-size: 13px;
+}
+.relative-news-title {
+    font-size: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+.relative-news-item {
+    font-weight: unset;
+    color: #0098f1;
+    border-bottom: 1px solid #0098f1;
+}
+.container-fluid {
+    width: 80%;
+}
+.footer-content {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.logo-bot{
+    margin-right: 3%;
+    margin-left: -3%;
+}
+.logo-bot .margin-top{
+    margin-top: 10%;
+}
+.link-bottom {  
+    color: #b4bfd1;
+}
+.first-link-bottom {
+    color: white;
+    font-size: 16px;
+}
+.row-link-bottom {
+    margin-top: 3%;
+}
+.bottom-text {
+    display: contents;
+}
+.blue-text {
+    color: #0287b7;
+}
+.logo-bot .margin-left-top {
+    font-size: 14px;
+    margin-left: 22%;
+    margin-top: 2%;
+}
+.header-title.title-news {
+    border-bottom: unset;
+}
+.news-list-3 li{
+
+    border: 3px solid #e3e3e3;
+    border-style: dotted;
+    box-shadow: 3px 3px #dddddd;
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 7px;
+    padding-bottom: 7px;
+}.news-list-3 li img {
+    width: 100%;
+    height: 32%;
+}
+.tit {
+    color: #cb6554;
+}
+.sale-news-date {
+    color: #cb6554  !important;
+}
+.sale-news-list-detail {
+    height: 32%;
+}
+.sale-news-list-detail .value {
+    position: absolute;
+    bottom: 0px;
+    color: #ff5354;
+}
+.sale-news-list-detail .value .font-bold {
+    color: #ff5354;
+}
+.sale-news-list-detail .description {
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+}
+.news-list-3 li label {
+    width: 4%;
+}
+.sale-news-list-detail .value label {
+    width: 37px;;
+}
+.zone-right2-ads1 img{
+    height: 100%;
+}
+.zone-right2-ads2 img{
+    height: 41%;
+}
+/* Hết phần của Thái */
