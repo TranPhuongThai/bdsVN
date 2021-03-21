@@ -1462,7 +1462,7 @@ em {
     color: rgb(1 96 178);
     font-size: 11px;
     text-decoration: none;
-    padding-top: 18px;
+    padding-top: 15px;
     float: right;
 }
 
@@ -1568,9 +1568,9 @@ em {
 }
 .bds-area-img-2 img{
     float: left;
-    height: 208px;
-    width: 316px;
-    margin: 0px 0px 14px 9px;
+    height: 210px;
+    width: 315px;
+    margin: 0px 0px 10px 10px;
 }
 .bds-area-title{
     float: left;
@@ -1579,4 +1579,25 @@ em {
     margin: 10px;
 }
 
+.main-page .header-title{
+    border-bottom: unset !important;
+}
+
+@media (max-width: 992px){
+    .bds-area-img-1 img{
+        width: 100%;
+    }
+    .bds-area-img-2 img{
+        width: 50%;
+    }
+}
+@media (max-width: 768px){
+    .bds-area-img-1 img{
+        width: 100%;
+    }
+    .bds-area-img-2 img{
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+    }
+}
 /* hết của Phong */

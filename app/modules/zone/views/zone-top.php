@@ -39,7 +39,7 @@
                         <li><a href="<?php echo base_url();?>lien-he" title="Đất vàng Bình Dương"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Liên hệ</a></li>
                     </ul> -->
                     <div class="main-menu">
-                        <div class="container">
+                        <div class="">
                             <?php echo $moduser->navbarRight();?>
                             <span class="button-main-menu-mobile">Danh mục website</span>
                             <ul class="nav navbar-nav nav-main-menu">

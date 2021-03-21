@@ -41,7 +41,7 @@
                 	</div>
                 	<div class="form-group more">
                 		<label>
-                            <span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#modalLogin" class="close" data-dismiss="modal" aria-label="Close">Đã có tài khoản</a>
+                            <span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;<a href="#" class="login close" data-dismiss="modal" aria-label="Close">Đã có tài khoản</a>
                         </label>
                 	</div>
                 </form>
@@ -77,8 +77,8 @@
                 	</div>
                 	<div class="form-group more">
                 		<label>
-                            <span class="glyphicon glyphicon-question-sign"></span>&nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#modalForget" class="close" data-dismiss="modal" aria-label="Close">Quên mật khẩu?</a>&nbsp;&nbsp;/&nbsp;&nbsp;
-                            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#modalRegis" class="close" data-dismiss="modal" aria-label="Close">Đăng ký tài khoản</a>
+                            <span class="glyphicon glyphicon-question-sign"></span>&nbsp;&nbsp;<a href="#" class="forget close" data-dismiss="modal" aria-label="Close">Quên mật khẩu?</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;<a href="#" class="regis close" data-dismiss="modal" aria-label="Close">Đăng ký tài khoản</a>
                         </label>
                 	</div>
                 </form>
@@ -108,7 +108,7 @@
                 	</div>
                 	<div class="form-group more">
                 		<label>
-                            <a href="#" data-toggle="modal" data-target="#modalLogin" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Đăng nhập</a>
+                            <a href="#" data-toggle="modal" class="login close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Đăng nhập</a>
                 		</label>
                 	</div>
                 </form>

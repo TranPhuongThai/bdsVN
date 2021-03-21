@@ -1,6 +1,6 @@
 <div class="news-list-10">
 <?php foreach($real_list as $row){ ?>
-    <div class="col-md-3 col-sm-6">
+    <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="col-sm-12 box-shadow">
             <div class="row m-row">
                 <a class="img" href="<?php echo base_url()._setURL($row['Name'])."-real-".$row['ID'].".html";?>" title="<?php echo $row['Name'];?>"><img src="<?php echo $row['Thumb1'];?>" title="<?php echo $row['Name'];?>" alt="<?php echo $row['Name'];?>"/></a>    
@@ -11,10 +11,10 @@
         <!-- </div> -->
         
             <div class="row detail">
-                <div class=" col-sm-6">
+                <div class=" col-sm-6 col-xs-6">
                     <label><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Diện tích</label>: <?php echo (int)($row['LandArea']);?> m<sup>2</sup>
                 </div>
-                <div class=" col-sm-6">
+                <div class=" col-sm-6 col-xs-6">
                 <label><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Hướng</label>: <?php echo $row['Direction'] == "lang('backend.all')"?"":$row['Direction'];?>
                 </div>
                 <div class="col-sm-12 cast">
@@ -26,10 +26,10 @@
                 
             </div>
             <div class="row foot">
-            <div class=" col-sm-6">
+            <div class=" col-sm-6 col-xs-6">
                     <i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;<span class="news-date"><?php echo date("d/m/Y",strtotime($row['DateUp']));?></span>
                 </div>
-                <div class=" col-sm-6">
+                <div class="col-sm-6  col-xs-6">
                 <i class="glyphicon glyphicon-eye-open"></i>&nbsp;&nbsp;<span class="news-date"><?php echo $row['Hit'];?></span>
                 </div>
             

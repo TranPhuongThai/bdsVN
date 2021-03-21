@@ -4,6 +4,7 @@
         <li><a href="/user/add"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Đăng tin</a></li>
         <li><a href="/dang-xuat"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Đăng xuất</a></li>
     <?php }else{ ?>
-        <li><a href="#" data-toggle="modal" data-target="#modalLogin"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Đăng tin rao vặt</a></li>
+        <li><a href="#" data-toggle="modal" class="login"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Đăng nhập</a></li>
+        <li><a href="/user/add"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Đăng tin rao vặt</a></li>
     <?php } ?>
 </ul>
