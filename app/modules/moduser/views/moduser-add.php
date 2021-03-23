@@ -5,7 +5,9 @@ $form = array(
     "class"     => "marign-top validate"
 );
 ?>
-<div class="header-title title-support"><?php echo (isset($real_check)) ? 'Sửa tin rao' : 'Đăng tin nhà đất';?></div>
+<span class="header-title">
+    <span class="col-md-12 active"><?php echo (isset($real_check)) ? 'Sửa tin rao' : 'Đăng tin nhà đất';?></span>
+</span>
 <div class="content-static">
     <?php echo form_open_multipart("",$form);?>
     <?php

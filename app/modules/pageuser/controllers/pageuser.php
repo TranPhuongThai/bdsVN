@@ -43,7 +43,8 @@ class Pageuser extends MX_Controller{
         $data = $this->my_auth->is_Member_Login();
         
         if(!$data['userid']){
-            redirect(base_url());
+            $data['userid'] = 0;
+            $data['username'] = "Khách vãng lai";
         }
         $data['menu'] = 0;
         $data['seo'] = $this->my_site_menu->_loadSeoMenu($data['menu']);

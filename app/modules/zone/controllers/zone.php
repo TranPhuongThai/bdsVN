@@ -184,9 +184,9 @@ class Zone extends MX_Controller{
         
         $data = $this->my_auth->is_Member_Login();
         
-        if(!$data['userid']){
-            return;
-        }
+        // if(!$data['userid']){
+        //     return;
+        // }
         
         $data['mod'] = $mod;
 

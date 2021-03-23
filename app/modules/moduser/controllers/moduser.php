@@ -322,15 +322,19 @@ class Moduser extends MX_Controller{
     public function add(){
         $this->load->helper(array('form'));
         $this->load->library(array("form_validation"));
-        $data = $this->my_auth->is_Member_Login();
-        if(!isset($data['userid'])){
-            exit;
-        }
         $this->load->models(array('moduser/mmoduser_wb_user','modreal/mmodreal_site_real','msite_add_province','msite_add_district','msite_add_ward'));
-        $data['userCheck'] = $this->mmoduser_wb_user->getDataByID($data['userid']);
-        if(!$data['userCheck']){
-            exit;
+        
+        $data = $this->my_auth->is_Member_Login();
+        if(isset($data['userid'])){
+            $data['userCheck'] = $this->mmoduser_wb_user->getDataByID($data['userid']);
+            if(!$data['userCheck']){
+                exit;
+            }
+        }else{
+            $data['userid'] = 0;
+            $data['username'] = "Khách vãng lai";
         }
+        
         $data['menu_list'] = $this->_getOptionMenuReal(0);
         $data['province_list'] = $this->msite_add_province->getAllData("ASC",99,0);
         $data['district_list'] = $this->msite_add_district->getProvinceData(8,"ASC",99,0);

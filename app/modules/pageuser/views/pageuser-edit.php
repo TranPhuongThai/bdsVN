@@ -24,7 +24,7 @@
     <!-- Fixed navbar -->
     <?php echo $zone->top($menu);?>
     <div class="wrapper">
-        <div class="container">
+        <div class="container user-page">
             <div class="col-md-12">
                 <div class="col-md-3">
                     <?php echo $zone->leftUser('add');?>
