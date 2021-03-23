@@ -20,7 +20,7 @@
 <div class="main-menu margin-top">
     <div class="container">
         <ul class="nav-main-menu nav-main-menu-2">
-            <?php echo $modmenu->navigation(0,1,$menu);?>
+            <?php //echo $modmenu->navigation(0,1,$menu);?>
         </ul>
     </div>
 </div>

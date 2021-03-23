@@ -1,6 +1,6 @@
 <div class="news-list-10">
 <?php foreach($real_list as $row){ ?>
-    <div class="col-sm-3">
+    <div class="col-md-3 col-sm-6">
         <div class="col-sm-12 box-shadow">
             <div class="row m-row">
                 <a class="img" href="<?php echo base_url()._setURL($row['Name'])."-real-".$row['ID'].".html";?>" title="<?php echo $row['Name'];?>"><img src="<?php echo $row['Thumb1'];?>" title="<?php echo $row['Name'];?>" alt="<?php echo $row['Name'];?>"/></a>    

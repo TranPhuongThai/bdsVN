@@ -82,15 +82,40 @@
                         <a class="view-more" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">>>Xem tất cả</a>
                         <hr  width="88%" align="left" />
                     </span>
-                    <a href="#" class="bds-area-img-1"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                    <div class="col-md-6 row">
+                    <a href="#" class="bds-area-img"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
                                     <!-- <span>Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</span> -->
                                 </a>
-                    <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                    </div>
+                    <div class="col-md-6 row-right">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                                <!-- <span>Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</span> -->
+                                </a>
+                            </div>
+                            <div class="col-md-6"><a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
                         <!-- <span>Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</span> -->
-                    </a>
-                    <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                    </a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#" class="bds-area-img"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                                <!-- <span>Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</span> -->
+                                </a>
+                            </div>
+                            <div class="col-md-6"><a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
                         <!-- <span>Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</span> -->
-                    </a>
+                    </a></div>
+                        </div>
+                        
+                        
+                        <div></div>
+                        <div></div>
+                    </div>
+                    
+                    
+                    
                     <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
                         <!-- <span>Tin mới nhận trong ngày hôm nay. Tin mới nhận trong ngày hôm nay</span> -->
                     </a><a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
@@ -169,10 +194,10 @@
                         <a class="view-more" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">>>Xem tất cả</a>
                         <hr  width="88%" align="left" />
                     </span>
-                    <a class="col-md-3 btn btn-hotro btn-hotro1" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Xem tuổi xây nhà</a>
-                    <a class="col-md-3 btn btn-hotro btn-hotro2" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Dự tính chi phí làm nhà</a>
-                    <a class="col-md-3 btn btn-hotro btn-hotro3" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Tính Lãi Suất</a>
-                    <a class="col-md-3 btn btn-hotro btn-hotro4" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Tư vấn phong thuỷ</a>
+                    <a class="col-md-3 col-sm-6 btn btn-hotro btn-hotro1" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Xem tuổi xây nhà</a>
+                    <a class="col-md-3 col-sm-6 btn btn-hotro btn-hotro2" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Dự tính chi phí làm nhà</a>
+                    <a class="col-md-3 col-sm-6 btn btn-hotro btn-hotro3" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Tính Lãi Suất</a>
+                    <a class="col-md-3 col-sm-6 btn btn-hotro btn-hotro4" href="<?php echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">Tư vấn phong thuỷ</a>
                     <div class="clearfix"></div>
                 </div>
             </div>
