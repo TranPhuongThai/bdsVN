@@ -24,6 +24,7 @@
         </ul>
     </div>
 </div>
+<?php echo $moduser->modalLogin();?>
 <div id="footer">
     <div class="container-fluid">
         <div class="row">

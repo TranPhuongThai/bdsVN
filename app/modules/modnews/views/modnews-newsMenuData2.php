@@ -5,7 +5,7 @@
 $stt = 0;
 foreach($news_list as $row){ 
     if($stt < 2){ ?>
-        <div class="col-md-6 col-xs-6">
+        <div class="col-md-6 col-sm-6 col-xs-12">
             <ul class="news-list-4-1">
                 <li>
                     <a href="<?php echo base_url()._setURL($row['Name'])."-news-".$row['ID'].".html";?>">
@@ -19,7 +19,7 @@ foreach($news_list as $row){
                 
     <?php
     }else{?>
-        <div class="col-md-6 col-xs-6">
+        <div class="col-md-6 col-sm-6 col-xs-12">
             <ul class="news-list-5-2">
                 <li>
                     <a href="<?php echo base_url()._setURL($row['Name'])."-news-".$row['ID'].".html";?>">
