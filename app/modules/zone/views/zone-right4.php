@@ -7,7 +7,7 @@
                 <div class="row m-row margin-top">
                     <div class="header-title-right-bar">Xem nhiều</div>
                     <div class="clearfix"></div>
-                    <?php echo $modnews->newsTopHit(2, 0);?>
+                    <?php echo $modnews->newsTopHit2(2, 0);?>
                     <div class="clearfix"></div>
                 </div>
                 <div class="row m-row margin-top">
@@ -18,7 +18,7 @@
                 <div class="row m-row margin-top">
                     <div class="header-title-right-bar">Tư vấn</div>
                     <div class="clearfix"></div>
-                    <?php echo $modnews->newsAdvisory(3, 0);?>
+                    <?php echo $modnews->newsAdvisory2(3, 0);?>
                     <div class="clearfix"></div>
                 </div>
                 <!-- <div class="row m-row margin-top">

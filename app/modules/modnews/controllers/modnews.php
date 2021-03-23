@@ -116,6 +116,20 @@ class Modnews extends MX_Controller{
 
     }
 
+    public function newsTopHit2($record_number = 4, $record_start = 0){
+
+        $this->load->model(array("modnews/mmodnews_site_news"));
+
+        $data['news_list'] = $this->mmodnews_site_news->getTopHitData("DESC", $record_number, $record_start);
+
+        if($data['news_list']){
+
+            $this->load->view("modnews/modnews-newsHot2", $data);
+
+        }
+
+    }
+
     public function newsAdvisory($record_number = 4, $record_start = 0){
 
         $this->load->model(array("modnews/mmodnews_site_news"));
@@ -125,6 +139,20 @@ class Modnews extends MX_Controller{
         if($data['news_list']){
 
             $this->load->view("modnews/modnews-newsHot", $data);
+
+        }
+
+    }
+
+    public function newsAdvisory2($record_number = 4, $record_start = 0){
+
+        $this->load->model(array("modnews/mmodnews_site_news"));
+
+        $data['news_list'] = $this->mmodnews_site_news->getAdvisoryData("DESC", $record_number, $record_start);
+
+        if($data['news_list']){
+
+            $this->load->view("modnews/modnews-newsHot2", $data);
 
         }
 

@@ -14,7 +14,7 @@
                     </div>                  
                 </div>
                 <div class="row m-row margin-top">
-                    <span class="header-title title-support">Hỗ trợ trực tuyến</span>
+                    <span class="header-title title-support"><div>TÍNH NĂNG HỖ TRỢ</div></span>
                     <div class="clearfix"></div>
                     <?php echo $modsupport->index();?>
                     <div class="clearfix"></div>
