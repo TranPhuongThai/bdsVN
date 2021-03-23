@@ -258,4 +258,14 @@ $(document).ready(function(){
 
         rePosition();
     }
+    $(".login").click(function(){
+        $("#modalLogin").modal("show");
+    });
+    $(".forget").click(function(){
+        $("#modalForget").modal("show");
+    });
+    $(".regis").click(function(){
+        $("#modalRegis").modal("show");
+    });
+    
 })
