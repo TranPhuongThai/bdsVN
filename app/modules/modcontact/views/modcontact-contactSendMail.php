@@ -42,7 +42,9 @@ $reset = array(
     'class'     => 'btn btn-warning padding-0 margin-0 text-align-left font-weight-bold border-0 cursor-pointer hover-blue border-radius-5',
 );
 ?>
-<span class="header-title title-menu"><?php echo $static_page['Name'];?></span>
+<span class="header-title">
+    <span class="col-md-12 active"><?php echo $static_page['Name'];?></span>
+</span>
 <div class="content-static">
     <?php echo $static_page['Content'];?>
     <?php
