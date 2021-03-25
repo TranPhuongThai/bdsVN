@@ -151,7 +151,7 @@ class Pagereal extends MX_Controller{
 
     }
 
-    public function search($textSelect = 'none', $menuSelect = 0, $districtSelect = 0, $wardSelect = 0, $areaSelect = 0, $costSelect = 0, $directionSelect = 0, $bedroomSelect = 0, $sittingroomSelect = 0){
+    public function search($textSelect = 'none', $menuSelect = 0, $provinceSelect = 0, $districtSelect = 0, $wardSelect = 0, $areaSelect = 0, $costSelect = 0, $directionSelect = 0, $bedroomSelect = 0, $sittingroomSelect = 0){
 
         //echo '<pre>',print_r(func_get_args()),'</pre>';exit;
         $data['menu'] = 0;
@@ -164,7 +164,11 @@ class Pagereal extends MX_Controller{
 
         $data['menuSelect'] = $this->input->get('menuSelect');
 
+        $data['provinceSelect'] = $this->input->get('provinceSelect');
+
         $data['districtSelect'] = $this->input->get('districtSelect');
+
+        $data['wardSelect'] = $this->input->get('wardSelect');
 
         $data['areaSelect'] = $this->input->get('areaSelect');
 
@@ -185,6 +189,12 @@ class Pagereal extends MX_Controller{
         if(!$data['districtSelect']){
             $data['districtSelect'] = $districtSelect;
         }
+        if(!$data['provinceSelect']){
+            $data['provinceSelect'] = $provinceSelect;
+        }
+        if(!$data['wardSelect']){
+            $data['wardSelect'] = $wardSelect;
+        }
         if(!$data['areaSelect']){
             $data['areaSelect'] = $areaSelect;
         }
@@ -200,7 +210,7 @@ class Pagereal extends MX_Controller{
         if(!$data['sittingroomSelect']){
             $data['sittingroomSelect'] = $sittingroomSelect;
         }
-        
+        // echo '<pre>',print_r($data),'</pre>';exit;
         $this->load->model(array("modreal/mmodreal_site_real_menu","msite_add_district","msite_add_ward"));
                 
         //modules

@@ -164,9 +164,9 @@ class Modreal extends MX_Controller{
             $this->load->view("modreal/newData", $data);
         }
     }
-    public function search($text = 'none', $menu = 0, $district = 0, $ward = 0, $area = 0, $cost = 0, $direction = 0, $bedroom = 0, $sittingroom = 0){
+    public function search($text = 'none', $menu = 0, $province = 0, $district = 0, $ward = 0, $area = 0, $cost = 0, $direction = 0, $bedroom = 0, $sittingroom = 0){
                 
-        $this->load->model(array("modreal/mmodreal_site_real","modreal/mmodreal_site_real_menu","msite_add_district","msite_add_ward"));
+        $this->load->model(array("modreal/mmodreal_site_real","modreal/mmodreal_site_real_menu","msite_add_district","msite_add_ward", "msite_add_province"));
         
         if(!$text){
             $text = 'none';
@@ -326,6 +326,8 @@ class Modreal extends MX_Controller{
         $data['menu_check'] = $this->mmodreal_site_real_menu->getDataByID($menu);
         
         $data['district_check'] = $this->msite_add_district->getDataByID($district);
+
+        $data['province_check'] = $this->msite_add_province->getDataByID($province);
         
         $data['ward_check'] = $this->msite_add_ward->getDataByID($ward);
         
@@ -335,6 +337,12 @@ class Modreal extends MX_Controller{
         }
         if($data['district_check']){
             $name[] = $data['district_check']['Name'];
+        }
+        if($data['province_check']){
+            $name[] = $data['province_check']['Name'];
+        }
+        if($data['ward_check']){
+            $name[] = $data['ward_check']['Name'];
         }
         if(!$name){
             $name = 'Kết quả tìm kiếm';
@@ -347,15 +355,16 @@ class Modreal extends MX_Controller{
         
         $this->load->library(array("pagination"));
 
-        $config['base_url'] = base_url("tim-nha-dat-binh-duong/$text/$menu/$district/$ward/$area/$cost/$direction/$bedroom/$sittingroom");
+        $config['base_url'] = base_url("tim-nha-dat-binh-duong/$text/$menu/$province/$district/$ward/$area/$cost/$direction/$bedroom/$sittingroom");
         $config['total_rows'] = $this->mmodreal_site_real->countSearchData($text, $menu, $district, $ward, $area1, $area2, $cost1, $cost2, $direction, $bedroom, $sittingroom);
         $config['per_page'] = 15; 
         $config['uri_segment'] = 9;
         $this->pagination->initialize($config);
         
-        $data['real_list'] = $this->mmodreal_site_real->getSearchData($text, $menu, $district, $ward, $area1, $area2, $cost1, $cost2, $direction, $bedroom, $sittingroom, $config['per_page'],$this->uri->segment(9));
+        $data['real_list'] = $this->mmodreal_site_real->getSearchData($text, $menu,$province, $district, $ward, $area1, $area2, $cost1, $cost2, $direction, $bedroom, $sittingroom, $config['per_page'],$this->uri->segment(9));
         $this->load->view("modreal/newData", $data);
     }
+    // form('', 0,0,0,0,0,0,0,0,0,'right')
     public function form($text, $province=0, $district=0, $ward=0, $rmenu=0, $direction=0, $area=0, $cost=0, $bedRoom=0, $sittingRoom=0, $view = 'wide'){
         $data['textSelect'] = $text;
         $data['provinceSelect'] = $province;

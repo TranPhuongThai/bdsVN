@@ -176,6 +176,22 @@ $(document).ready(function(){
             $(this).parent().parent().find('form select[data-type="2"]').removeClass('disabled').prop('disabled', false);
         }
     });
+    $("#province_list").change(function (){
+        var str = "";
+        $(this).find("option:selected").each(function () {
+            str += $(this).attr("value");
+        });
+        //var cct = $("input[name=csrf_token_name]").val();
+        //var cct = $.cookie("csrf_cookie_name");
+        $.post("/ajax/getOptionDistrict/"+str, {
+                'id' : str,
+                'csrf_token_name': cct
+            },function(data){
+                data = '<option value="0">Quận/Huyện</option>' + data;
+                $("#district_list").html(data);
+            }); 
+        return false;
+    });
     $("#district_list").change(function (){
         var str = "";
         $(this).find("option:selected").each(function () {
