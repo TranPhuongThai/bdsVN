@@ -1,4 +1,6 @@
-                <div class="header-title title-support">Tin rao của bạn</div>
+                <span class="header-title">
+                    <span class="col-md-12 active">Tin rao của bạn</span>
+                </span>
                 <div class="content-static">
                     <?php echo $modtext->getTextNoTitle(6);?>
                     <div class="clearfix"></div>
