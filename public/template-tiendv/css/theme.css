@@ -1532,7 +1532,9 @@ margin-top: 5px;
 .main-page .header-title{
     border-bottom: unset !important;
 }
-
+.user-page .header-title{
+    border-bottom: unset !important;
+}
 @media (max-width: 992px){
     .bds-area-img-1 img{
         width: 100%;

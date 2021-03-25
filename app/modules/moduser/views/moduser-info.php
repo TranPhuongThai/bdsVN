@@ -5,7 +5,9 @@ $form = array(
     "class"     => "marign-top"
 );
 ?>
-<div class="header-title title-support">Thay đổi thông tin cá nhân</div>
+<span class="header-title">
+    <span class="col-md-12 active">Thay đổi thông tin cá nhân</span>
+</span>
 <div class="content-static">
     <?php echo form_open("",$form);?>
     <?php
