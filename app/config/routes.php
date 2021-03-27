@@ -23,8 +23,8 @@ $route['(:any)-news-(:num).html']           = "pagenews/detail/$2";
 $route['(:any)-mnews-(:num).html(:any)']    = "pagenews/menu/$2";
 $route['(:any)-mnews-(:num).html']          = "pagenews/menu/$2";
 
-$route['tim-nha-dat-binh-duong/(:any)/(:num)/(:num)/(:num)/(:num)/(:num)/(:num)/(:num)']      = "pagereal/search/$1/$2/$3/$4/$5/$6/$7";
-$route['tim-nha-dat-binh-duong/(:any)/(:num)/(:num)/(:num)/(:num)/(:num)/(:num)']      = "pagereal/search/$1/$2/$3/$4/$5/$6/$7";
+$route['tim-nha-dat-binh-duong/(:any)/(:num)/(:num)/(:num)/(:num)/(:num)/(:num)/(:num)/(:num)']      = "pagereal/search/$1/$2/$3/$4/$5/$6/$7/$8";
+$route['tim-nha-dat-binh-duong/(:any)/(:num)/(:num)/(:num)/(:num)/(:num)/(:num)/(:num)']      = "pagereal/search/$1/$2/$3/$4/$5/$6/$7/$8";
 $route['tim-nha-dat-binh-duong?(:any)']      = "pagereal/search";
 
 

@@ -9,6 +9,11 @@ foreach($menu_list as $row){
     $menuSelectList[$row['ID']] = $row['Name'];
 }
 
+$provinceSelectList = array(0=>'Tỉnh/Thành phố');
+foreach($province_list as $row){
+    $provinceSelectList[$row['ID']] = $row['Name'];
+}
+
 $districtSelectList = array(0=>'Quận/Huyện');
 foreach($district_list as $row){
     $districtSelectList[$row['ID']] = $row['Name'];
@@ -43,38 +48,6 @@ $costSelectList = array(
     "50" => "trên 5 tỷ",
 );
 
-$directionSelectList = array(
-    "0" => "Hướng nhà",
-    "1" => "Đông",
-    "2" => "Tây",
-    "3" => "Nam",
-    "4" => "Bắc",
-    "5" => "Đông Bắc",
-    "6" => "Đông Nam",
-    "7" => "Tây Bắc",
-    "8" => "Tây Nam",
-);
-
-$bedRoomSelectList = array(
-    "0" => "Số phòng ngủ",
-    "1" => "1 +",
-    "2" => "2 +",
-    "3" => "3 +",
-    "4" => "4 +",
-    "5" => "5 +",
-    "6" => "6 +",
-);
-
-$sittingRoomSelectList = array(
-    "0" => "Số phòng khách",
-    "1" => "1 +",
-    "2" => "2 +",
-    "3" => "3 +",
-    "4" => "4 +",
-    "5" => "5 +",
-    "6" => "6 +",
-);
-
 ?>
 <div id="main-search" class="main-search-2">
     <ul>
@@ -91,6 +64,9 @@ $sittingRoomSelectList = array(
             <?php echo form_dropdown('menuSelect', $menuSelectList, $menuSelect); ?>
         </div>
         <div class="col-md-12 form-item">
+            <?php echo form_dropdown('provinceSelect', $provinceSelectList, $provinceSelect, "id=\"province_list\""); ?>
+        </div>
+        <div class="col-md-12 form-item">
             <?php echo form_dropdown('districtSelect', $districtSelectList, $districtSelect, "id=\"district_list\""); ?>
         </div>
         <div class="col-md-12 form-item">
@@ -102,7 +78,7 @@ $sittingRoomSelectList = array(
         <div class="col-md-12 form-item">
             <?php echo form_dropdown('costSelect', $costSelectList, $costSelect); ?>
         </div>
-        <div class="col-md-12 form-item">
+        <!-- <div class="col-md-12 form-item">
             <?php echo form_dropdown('directionSelect', $directionSelectList, $directionSelect); ?>
         </div>
         <div class="col-md-12 form-item">
@@ -110,7 +86,7 @@ $sittingRoomSelectList = array(
         </div>
         <div class="col-md-12 form-item">
             <?php echo form_dropdown('sittingRoomSelect', $sittingRoomSelectList, $sittingRoomSelect, 'data-type="2"'); ?>
-        </div>
+        </div> -->
         <div class="col-md-12 form-item">
             <input type="submit" value="Tìm Kiếm"/>
         </div>

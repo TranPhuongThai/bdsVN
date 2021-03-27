@@ -221,7 +221,7 @@ class Mmodreal_site_real extends CI_Model{
         }
     }
 
-    function getSearchData($text, $menu, $district, $ward, $area1, $area2, $cost1, $cost2, $direction, $bedroom, $sittingroom, $record_number, $record_start){
+    function getSearchData($text, $menu, $province, $district, $ward, $area1, $area2, $cost1, $cost2, $direction, $bedroom, $sittingroom, $record_number, $record_start){
         $this->db->select('r.*, d.Name as DName');
         $this->db->from($this->_table." r, site_add_district d");
         $this->db->where("r.District = d.ID");
@@ -236,6 +236,8 @@ class Mmodreal_site_real extends CI_Model{
             $this->db->where("District", $district);
         if(is_numeric($ward) && $ward)
             $this->db->where("Ward", $ward);
+        if(is_numeric($province) && $province)
+            $this->db->where("r.Province", $province);
             
         if($direction)
             $this->db->where("Direction", $direction);
@@ -253,7 +255,7 @@ class Mmodreal_site_real extends CI_Model{
             $this->db->where("SittingRoom", $sittingroom);
             
         $this->db->limit($record_number, $record_start);
-        $this->db->order_by("ID",$order);
+        $this->db->order_by("ID",'DESC');
         $query = $this->db->get();
         $data = $query->result_array();
         return $data;

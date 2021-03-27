@@ -40,7 +40,7 @@
                             </select>
                         </form>
                     </div>
-                    <?php echo $modreal->search($text, $menuSelect, $districtSelect, $areaSelect, $costSelect, $directionSelect, $bedRoomSelect, $sittingRoomSelect);?>
+                    <?php echo $modreal->search($textSelect, $menuSelect, $provinceSelect, $districtSelect, $wardSelect, $areaSelect, $costSelect);?>
                 </div>
             </div>
             <div class="col-md-4 margin-top">
