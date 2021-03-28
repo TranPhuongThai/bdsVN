@@ -260,6 +260,28 @@ class Mmodreal_site_real extends CI_Model{
         $data = $query->result_array();
         return $data;
     }
+    function getSearchMapData($menu, $province, $cost1, $cost2){
+        $this->db->select('r.*');
+        $this->db->from($this->_table." r, site_add_province p");
+        $this->db->where("r.Province = p.ID");
+        $this->db->where('r.Status', 1);
+        
+        if(is_numeric($menu) && $menu)
+            $this->db->where("Menu", $menu);
+        if(is_numeric($province) && $province)
+            $this->db->where("r.Province", $province);
+            
+        if($cost1 > 0)
+            $this->db->where("Total >= ", $cost1);
+        if($cost2 > 0)
+            $this->db->where("Total <= ", $cost2);
+        
+            
+        $this->db->order_by("Lat",'DESC');
+        $query = $this->db->get();
+        $data = $query->result_array();
+        return $data;
+    }
 
     function countSearchData($text, $menu = 0, $district, $ward, $area1, $area2, $cost1, $cost2, $direction, $bedroom, $sittingroom){
         $this->db->select('count(*) as Sum');

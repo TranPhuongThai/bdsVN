@@ -82,39 +82,39 @@
                         <!-- <a class="view-more" href="<?php //echo base_url()._setURL('tin-tuc')."-mnews-1.html";?>" target="_blank">>>Xem tất cả</a> -->
                         <hr  width="88%" align="left" />
                     </span>
-                    <a href="#" class="bds-area-img-1"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                    <a href="#" class="bds-area-img-1"><img src="<?=base_url()?>/public/assets/banner/banner-right.png" alt="" title=""/>
                     </a>
-                    <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                    <a href="#" class="bds-area-img-2"><img src="<?=base_url()?>/public/assets/banner/banner-right.png" alt="" title=""/>
                     </a>
-                    <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                    <a href="#" class="bds-area-img-2"><img src="<?=base_url()?>/public/assets/banner/banner-right.png" alt="" title=""/>
                     </a>
-                    <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                    <a href="#" class="bds-area-img-2"><img src="<?=base_url()?>/public/assets/banner/banner-right.png" alt="" title=""/>
                     </a>
-                    <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                    <a href="#" class="bds-area-img-2"><img src="<?=base_url()?>/public/assets/banner/banner-right.png" alt="" title=""/>
                     </a>
                     
                     <!-- <div class="col-md-6 row">
-                        <a href="#" class="bds-area-img-1"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                        <a href="#" class="bds-area-img-1"><img src="<?=base_url()?>/public/assets/banner/banner-right.png" alt="" title=""/>
                         </a>
                     </div>
                     <div class="col-md-6 row-right">
                         <div class="row">
                             <div class="col-md-6 row-right">
-                                <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                                <a href="#" class="bds-area-img-2"><img src="<?=base_url()?>/public/assets/banner/banner-right.png" alt="" title=""/>
                                 </a>
                             </div>
                             <div class="col-md-6 row-right">
-                                <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                                <a href="#" class="bds-area-img-2"><img src="<?=base_url()?>/public/assets/banner/banner-right.png" alt="" title=""/>
                                 </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 row-right">
-                                <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                                <a href="#" class="bds-area-img-2"><img src="<?=base_url()?>/public/assets/banner/banner-right.png" alt="" title=""/>
                                 </a>
                             </div>
                             <div class="col-md-6 row-right">
-                                <a href="#" class="bds-area-img-2"><img src="http://datvangbinhduong.vn/public/assets/banner/banner-right.png" alt="" title=""/>
+                                <a href="#" class="bds-area-img-2"><img src="<?=base_url()?>/public/assets/banner/banner-right.png" alt="" title=""/>
                                 </a>
                             </div>
                         </div>

@@ -50,6 +50,8 @@ $route['tuyen-dung']                        = "pagetext/index/5/0";
 $route['tuyen-dung/(:any)']                 = "pagetext/index/5/0";
 $route['lien-he']                           = "pagecontact/index";
 $route['lien-he/(:any)']                    = "pagecontact/index";
+$route['tim-kiem-bang-ban-do']              = "pagereal/searchmap";
+$route['tim-kiem-bang-ban-do/(:any)']       = "pagereal/searchmap";
 
 $route['default_controller']    = "pagehome";
 $route['404_override']          = 'pagehome/error';
