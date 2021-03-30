@@ -64,8 +64,8 @@
         console.log(locations);
         const markers = locations.map((location, i) => {
             return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length],
+            position: location.location,
+            label: location.label,
             });
         });
         // Add a marker clusterer to manage the markers.

@@ -29,10 +29,19 @@ $costSelectList = array(
 
 $locations = [];
 foreach($real_list as $real){
-    if($real['Lat'] != "" && $real['Lat'] != ""){
-        $locations[] = ['lat'=>$real['Lat'],'lng'=>$real['Lng']];
+    $label = 'Thương lượng';
+    if($real['Total'] != ''){
+        if(($real['Total']/1000000)>1){
+            $label = strval($real['Total']/1000000).'tr';
+        }else if(($real['Total']/1000000000)>1){
+            $label = strval($real['Total']/1000000000).'tỉ';
+        }else{
+            $label = strval($real['Total']/1000).'k';
+        }
     }
-    
+    if($real['Lat'] != "" && $real['Lat'] != ""){
+        $locations[] = ['location'=>['lat'=>$real['Lat'],'lng'=>$real['Lng']], 'label'=>$label];
+    }
 }
 ?>
 <div id="searchMap">
@@ -77,5 +86,5 @@ foreach($real_list as $real){
 </div>
 <script>
     var locations = <?php echo json_encode($locations)?>;
-    
+    console.log(locations);
 </script>
