@@ -406,6 +406,107 @@ class Modreal extends MX_Controller{
         $data['ward_list'] = array();
         $this->load->view("modreal/form-".$view, $data);
     }
+    public function searchMap($province=0, $rmenu=0, $cost=0){
+        $data['provinceSelect'] = $province;
+        $data['menuSelect'] = $rmenu;
+        $data['costSelect'] = $cost;
+        $this->load->model(array("modreal/mmodreal_site_real","modreal/mmodreal_site_real_menu", "modreal/mmodreal_site_add_province"));
+        $this->load->helper(array("form"));
+        $data['menu_list'] = $this->mmodreal_site_real_menu->getAllData("ASC");
+        $data['province_list'] = $this->mmodreal_site_add_province->getNationData(1,"ASC",0,99);
+        if($cost == 1){
+
+            $cost1 = 100000000;
+
+            $cost2 = 300000000;
+
+        }elseif($cost == 3){
+
+            $cost1 = 300000000;
+
+            $cost2 = 600000000;
+
+        }elseif($cost == 6){
+
+            $cost1 = 600000000;
+
+            $cost2 = 800000000;
+
+        }elseif($cost == 8){
+
+            $cost1 = 800000000;
+
+            $cost2 = 1000000000;
+
+        }elseif($cost == 10){
+
+            $cost1 = 1000000000;
+
+            $cost2 = 1500000000;
+
+        }elseif($cost == 15){
+
+            $cost1 = 1500000000;
+
+            $cost2 = 2000000000;
+
+        }elseif($cost == 20){
+
+            $cost1 = 2000000000;
+
+            $cost2 = 2500000000;
+
+        }elseif($cost == 25){
+
+            $cost1 = 2500000000;
+
+            $cost2 = 3000000000;
+
+        }elseif($cost == 30){
+
+            $cost1 = 3000000000;
+
+            $cost2 = 5000000000;
+
+        }elseif($cost == 50){
+
+            $cost1 = 5000000000;
+
+            $cost2 = 99999999999;
+
+        }else{
+            $cost1 = 0;
+
+            $cost2 = 99999999999;
+
+        }
+        
+    
+        $data['menu_check'] = $this->mmodreal_site_real_menu->getDataByID($rmenu);
+        
+        $data['province_check'] = $this->msite_add_province->getDataByID($province);
+        
+        
+        $name = array();
+        if($data['menu_check']){
+            $name[] = $data['menu_check']['Name'];
+        }
+        if($data['province_check']){
+            $name[] = $data['province_check']['Name'];
+        }
+        if(!$name){
+            $name = 'Kết quả tìm kiếm';
+        }else{
+            $name = implode (', ',$name);
+        }
+        
+        $data['real_title'] = $name;
+
+        $config['base_url'] = base_url("tim-kiem-bang-ban-do");
+        
+        $data['real_list'] = $this->mmodreal_site_real->getSearchMapData($rmenu,$province, $cost1, $cost2);
+        $this->load->view("modreal/form-searchMap", $data);
+    }
     public function detail($id){
         if($id && is_numeric($id)){
             $this->load->model(array("modreal/mmodreal_site_real","modreal/mmodreal_site_real_img","modnews/mmodnews_site_news_comment","moduser/mmoduser_wb_user"));

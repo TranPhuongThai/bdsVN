@@ -239,6 +239,41 @@ class Pagereal extends MX_Controller{
 
     }
 
+    public function searchMap($provinceSelect = 0, $menuSelect = 0, $costSelect = 0){
+        $data['menu'] = 0;
+
+        $data['menu'] = 0;
+
+        $data['seo'] = $this->my_site_menu->_loadSeoRealMenu($data['menu'],$this->uri->segment(2));
+
+        $data['menuSelect'] = $this->input->get('menuSelect');
+
+        $data['provinceSelect'] = $this->input->get('provinceSelect');
+
+        $data['costSelect'] = $this->input->get('costSelect');
+        
+        if(!$data['menuSelect']){
+            $data['menuSelect'] = $menuSelect;
+        }
+        if(!$data['provinceSelect']){
+            $data['provinceSelect'] = $provinceSelect;
+        }
+        if(!$data['costSelect']){
+            $data['costSelect'] = $costSelect;
+        }
+        // echo '<pre>',print_r($data),'</pre>';exit;
+        $this->load->model(array("modreal/mmodreal_site_real_menu","msite_add_province","msite_add_ward"));
+                
+        //modules
+
+        $data['zone'] = $this->load->module("zone");
+
+        $data['modreal'] = $this->load->module("modreal");
+
+        $data['moduser'] = $this->load->module("moduser");
+        $this->load->view("pagereal/pagereal-searchMap",$data);
+    }
+
     public function detail($id){
 
         $data['menu'] = 0;

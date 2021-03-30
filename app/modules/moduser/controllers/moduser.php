@@ -61,7 +61,7 @@ class Moduser extends MX_Controller{
                         &nbsp;&nbsp;Email: '.$dataInsert['Username'].' <br />
                         &nbsp;&nbsp;Điện thoại: '.$dataInsert['Phone'].' <br /><br />
                         Vui lòng kích vào đường link dưới đây để kích hoạt tài khoản của bạn:<br />
-                        <a href="http://datvangbinhduong.vn/kich-hoat-tai-khoan?sign='.$dataInsert['Key'].'">http://datvangbinhduong.vn/user/active/?sign='.$dataInsert['Key'].'</a><br /><br />
+                        <a href="'.base_url().'/kich-hoat-tai-khoan?sign='.$dataInsert['Key'].'">'.base_url().'/user/active/?sign='.$dataInsert['Key'].'</a><br /><br />
                         Nếu đường link trên không hoạt động, vui lòng copy đường link đó, rồi paste lên thanh địa chỉ của trình duyệt để link tới trang kích hoạt trên hệ thống.<br /> 
                         Cảm ơn bạn đã sử dụng webbsite của chúng tôi!<br />
                     '
