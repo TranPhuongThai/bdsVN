@@ -67,4 +67,13 @@ class Mpagereal_site_real extends CI_Model{
         $data = $query->result_array();
         return $data;
     }
+
+    function getDistrictList() {
+        $this->db->select('n.*');
+        $this->db->from("site_add_district n");
+        $this->db->order_by("Name",'ASC');
+        $query = $this->db->get();
+        $data = $query->result_array();
+        return $data;
+    }
 }

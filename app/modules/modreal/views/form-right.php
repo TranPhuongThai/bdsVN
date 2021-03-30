@@ -78,15 +78,6 @@ $costSelectList = array(
         <div class="col-md-12 form-item">
             <?php echo form_dropdown('costSelect', $costSelectList, $costSelect); ?>
         </div>
-        <!-- <div class="col-md-12 form-item">
-            <?php echo form_dropdown('directionSelect', $directionSelectList, $directionSelect); ?>
-        </div>
-        <div class="col-md-12 form-item">
-            <?php echo form_dropdown('bedRoomSelect', $bedRoomSelectList, $bedRoomSelect, 'data-type="2"'); ?>
-        </div>
-        <div class="col-md-12 form-item">
-            <?php echo form_dropdown('sittingRoomSelect', $sittingRoomSelectList, $sittingRoomSelect, 'data-type="2"'); ?>
-        </div> -->
         <div class="col-md-12 form-item">
             <input type="submit" value="Tìm Kiếm"/>
         </div>

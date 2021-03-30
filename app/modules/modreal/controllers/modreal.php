@@ -49,6 +49,28 @@ class Modreal extends MX_Controller{
         
         $data['realCheck'] = $this->mmodreal_site_add_district->getDataByID($district);
         
+        
+        $this->load->library("pagination");
+        $config['base_url'] = base_url("nha-dat-")._setURL($data['realCheck']['Name']).'-rd-'.$data['realCheck']['ID'].'.html';
+        $config['total_rows'] = $this->mmodreal_site_real->countDistrictData2($district);
+        $config['per_page'] = $record_number; 
+        $config['uri_segment'] = 2;
+        $this->pagination->initialize($config);
+        
+        $data['real_list'] = $this->mmodreal_site_real->getDistrictData2($district, $config['per_page'], $this->uri->segment(2));
+        
+        if($data['real_list']){
+            $this->load->view("modreal/newData", $data);
+        }
+    }
+    public function userNewList($district, $record_number = 4, $record_start = 0){
+        $this->load->model(array("modreal/mmodreal_site_real","modreal/mmodreal_site_add_district"));
+        $this->load->library("pagination");
+        $data['paginator'] = 1;
+        
+        $data['realCheck'] = $this->mmodreal_site_add_district->getDataByID($district);
+        
+        
         $this->load->library("pagination");
         $config['base_url'] = base_url("nha-dat-")._setURL($data['realCheck']['Name']).'-rd-'.$data['realCheck']['ID'].'.html';
         $config['total_rows'] = $this->mmodreal_site_real->countDistrictData2($district);

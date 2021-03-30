@@ -22,6 +22,7 @@
 
     <!-- Fixed navbar -->
     <?php echo $zone->top($menu);?>
+
     <div class="wrapper">
         <div class="container">
             <div class="col-md-8 margin-top">

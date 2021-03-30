@@ -252,6 +252,7 @@ class Pagereal extends MX_Controller{
             $this->load->model(array("pagereal/mpagereal_site_real"));
 
             $data['real_check'] = $this->mpagereal_site_real->getDataByID($id);
+            $data['districtList'] = $this->mpagereal_site_real->getDistrictList();
 
             if($data['real_check']){
 

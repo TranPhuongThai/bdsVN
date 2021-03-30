@@ -9,12 +9,13 @@ class Mmodreal_site_add_district extends CI_Model{
     }
     
     function getDataByID($id){
-        $this->db->where("ID",$id);
+        $this->db->where("ID",(int)$id);
         $query = $this->db->get($this->_table);
         
-        if($query)
-            return $query->row_array();
-        else
+        if($query) {
+        // echo '<pre>' . var_export($query->row_array(), true) . '</pre>'; die;
+            return $query->row_array(); }
+        else 
             return FALSE;
     }
 
