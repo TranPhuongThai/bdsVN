@@ -159,7 +159,7 @@ class Zone extends MX_Controller{
     }
 
 
-    public function right5($district){
+    public function right5($district, $comments){
 
         $data['modreal'] = $this->load->module("modreal");
 
@@ -174,6 +174,7 @@ class Zone extends MX_Controller{
         $data['modonline'] = $this->load->module("modonline");
         
         $data['district'] = $district;
+        $data['comments'] = $comments;
 
         $this->load->view("zone/zone-right5",$data);
 

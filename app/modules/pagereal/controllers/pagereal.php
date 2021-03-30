@@ -253,6 +253,7 @@ class Pagereal extends MX_Controller{
 
             $data['real_check'] = $this->mpagereal_site_real->getDataByID($id);
             $data['districtList'] = $this->mpagereal_site_real->getDistrictList();
+            $data['comments'] = $this->mpagereal_site_real->getCommentByNewId($id);
 
             if($data['real_check']){
 

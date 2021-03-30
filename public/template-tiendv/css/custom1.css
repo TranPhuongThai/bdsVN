@@ -135,5 +135,41 @@ em {
 .main-search-2 ul li {
     float: left;
 }
-
+.addition-information tbody tr td span{
+    color: #cd6d61;
+}
+.addition-information tbody tr td label{
+    margin-right: 20px;
+    font-weight: unset;
+}
+.comment-title span {
+    margin-left: 9%;
+    border: unset;
+}
+.same-title span {
+    margin-left: 9%;
+    border: unset;
+}
+.local-comment-list{
+    padding: unset;
+}
+.local-comment-list li{
+    list-style: none;
+    margin-bottom: 5%;
+}
+.local-comment-list img{
+    height: 4%;
+    max-width: unset;
+}
+.local-comment-list .col-sm-8{
+    margin-left: 4%;
+}
+.local-comment-list .user-name{
+    font-weight: bold;
+    color: #5b79ae;
+}
+.submit-comment {
+    margin-top: 2%;
+    margin-right: 0%;
+}
 /* Hết phần của Thái */

@@ -6,4 +6,7 @@ $(document).ready(function(){
         
         $(this).text(cutText);
     });
+    $('.submit-comment-btn').click(function () {
+        alert('submit comment');
+    })
 });
