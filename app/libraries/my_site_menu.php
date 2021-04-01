@@ -3,7 +3,7 @@
 class My_site_menu{
     var $obj;
     
-    function My_site_menu(){
+    function __construct(){
         $this->obj =& get_instance();
         
         $this->obj->load->database();

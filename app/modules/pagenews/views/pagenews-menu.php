@@ -26,7 +26,7 @@
         <div class="container">
             <div class="col-md-8 margin-top">
                 <div class="row-left m-row-left">
-                    <?php echo $modnews->newsMenu($menuid, 7, 0);?>
+                    <?php echo $modnews->newsMenu($menuid, 12, 0);?>
                 </div>
             </div>
             <div class="col-md-3 margin-top">

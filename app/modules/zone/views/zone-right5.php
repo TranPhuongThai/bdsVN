@@ -55,9 +55,9 @@
                     </ul>
                 </div>
                 <div class="row m-row margin-top">
-                    <span class="header-title title-support same-title"><span>Nhà đất cùng chuyên mục</span></span>
+                    <span class="header-title title-support same-title"><span>Tin đăng khác của thành viên này</span></span>
                     <div class="clearfix"></div>
-                    <?php echo $modreal->userNewlist($district, 6, 0);?>
+                    <?php echo $modreal->userNewlist($real_check['UserId'], 6, 0);?>
                     <div class="clearfix"></div>
                 </div>
 

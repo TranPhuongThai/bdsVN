@@ -63,22 +63,21 @@ class Modreal extends MX_Controller{
             $this->load->view("modreal/newData", $data);
         }
     }
-    public function userNewList($district, $record_number = 4, $record_start = 0){
-        $this->load->model(array("modreal/mmodreal_site_real","modreal/mmodreal_site_add_district"));
+    public function userNewList($userId, $record_number = 4, $record_start = 0){
+        $this->load->model(array("modreal/mmodreal_site_real"));
         $this->load->library("pagination");
         $data['paginator'] = 1;
         
-        $data['realCheck'] = $this->mmodreal_site_add_district->getDataByID($district);
+        $data['realCheck'] = $this->mmodreal_site_real->getSimilarUserData($userId);
         
+        // $this->load->library("pagination");
+        // $config['base_url'] = base_url("nha-dat-")._setURL($data['realCheck']['Name']).'-rd-'.$data['realCheck']['ID'].'.html';
+        // $config['total_rows'] = $this->mmodreal_site_real->countDistrictData2($userId);
+        // $config['per_page'] = $record_number; 
+        // $config['uri_segment'] = 2;
+        // $this->pagination->initialize($config);
         
-        $this->load->library("pagination");
-        $config['base_url'] = base_url("nha-dat-")._setURL($data['realCheck']['Name']).'-rd-'.$data['realCheck']['ID'].'.html';
-        $config['total_rows'] = $this->mmodreal_site_real->countDistrictData2($district);
-        $config['per_page'] = $record_number; 
-        $config['uri_segment'] = 2;
-        $this->pagination->initialize($config);
-        
-        $data['real_list'] = $this->mmodreal_site_real->getDistrictData2($district, $config['per_page'], $this->uri->segment(2));
+        // $data['real_list'] = $this->mmodreal_site_real->getDistrictData2($userId, $config['per_page'], $this->uri->segment(2));
         
         if($data['real_list']){
             $this->load->view("modreal/newData", $data);
@@ -419,7 +418,7 @@ class Modreal extends MX_Controller{
                 
                 $data['user_check'] = $this->mmoduser_wb_user->getDataByID($data['real_check']['User']);
                 
-                $data['real_list'] = $this->mmodreal_site_real->getSimilarData($id, $data['real_check']['Menu'], $data['real_check']['Type'], "DESC", 4,0);
+                $data['real_list'] = $this->mmodreal_site_real->getSimilarData($id, $data['real_check']['Menu'], $data['real_check']['Type'], "DESC", 8,0);
                 
                 $this->load->view("modreal/detail", $data);
             }

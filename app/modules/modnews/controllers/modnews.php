@@ -172,7 +172,7 @@ class Modnews extends MX_Controller{
 
     }
 
-    public function newsMenu($menu = 1, $record_number = 7, $record_start = 0){
+    public function newsMenu($menu = 1, $record_number = 12, $record_start = 0){
 
         $this->load->model(array("modnews/mmodnews_site_news","modnews/mmodnews_site_news_menu"));
 

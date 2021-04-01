@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="col-md-4 margin-top">
-                <?php echo $zone->right5($real_check['District'], $comments);?>
+                <?php echo $zone->right5($real_check, $comments);?>
             </div>
 
         </div>

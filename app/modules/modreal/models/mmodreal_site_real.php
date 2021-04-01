@@ -316,6 +316,18 @@ class Mmodreal_site_real extends CI_Model{
         return $data;
     }
 
+    function getSimilarUserData($userId, $order = "DESC", $record_number = 4, $record_start = 0){
+        $this->db->select('n.*');
+        $this->db->from($this->_table." n");
+        $this->db->where("n.UserId =", $userId);
+        $this->db->where("n.Status", 1);
+        $this->db->limit($record_number, $record_start);
+        $this->db->order_by("ID",$order);
+        $query = $this->db->get();
+        $data = $query->result_array();
+        return $data;
+    }
+
     function getDistrictData($order, $record_number, $record_start){
         $this->db->select('District, d.Name');
         $this->db->from($this->_table." r, site_add_district d");

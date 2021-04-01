@@ -67,6 +67,8 @@ class Mpagereal_site_real extends CI_Model{
         $data = $query->result_array();
         return $data;
     }
+    
+
 
     function getDistrictList() {
         $this->db->select('n.*');
@@ -82,7 +84,7 @@ class Mpagereal_site_real extends CI_Model{
         $this->db->from("site_real_comment n");
         $this->db->join('site_real m', 'n.Real = m.ID');
         $this->db->join('wb_user u', 'n.User = u.ID');
-        $this->db->where("m.ID", 90);
+        $this->db->where("m.ID", $id);
         $this->db->limit(5, 0);
         $this->db->order_by("n.Date",'DESC');
         $query = $this->db->get();
